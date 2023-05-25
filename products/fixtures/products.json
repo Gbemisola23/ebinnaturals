@@ -1,0 +1,114 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "sku": "ns0000000001",
+        "name": "Raw Unrefined Shea Butter Whipped",
+        "description": "Our Premium Butter can be used for hair, body, on babies and more",
+        "price": 15.99,
+        "category": 2,
+        "image": "shea_butter.jpg"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "ns0000000002",
+        "name": "Oatmeal Exfoliant",
+        "description": "This all-natural oat-based body scrub has a rich creamy texture that smooths easily even on dry skin.fresh and preserves both aroma and taste.",
+        "price": "10",
+        "rating": 5,
+        "image": "oatmeal-and-yogurt-exfoliant.jpeg"
+      }
+    },
+  
+  
+    {
+      "pk": 3,
+      "model": "products.product",
+      "fields": {
+        "sku": "ns0000000003",
+        "name": "Dudu Osun Soap",
+        "description": "ECO-FRIENDLY: Dudu-Osun black soap, consisting of 100% natural ingredients. Fully biologically amortizable. No artificial fragrances, colors or preservatives.Cleansing, caring, refreshing and protective for your skin.. ",
+        "price": 9.50,
+        "rating": 4.5,
+        "image": "dudu_osun_black_soap.jpeg"
+      }
+    },
+  
+    {
+      "pk": 4,
+      "model": "products.product",
+      "fields": {
+        "sku": "ns0000000004",
+        "name": "Moroccan Oil Mint Soap",
+        "description": "This is made from an ancient recipe that has been passed down through the generations. Black soap is known for its gentle, deep cleansing abilities. Looking for a wake up call? Our special mix of these Essential Oils will jump start your day.",
+        "price": 5,
+        "rating": 4,
+        "image": "moroccanoil_mint_soap.webp.jpg"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.product",
+      "fields": {
+        "sku": "ns0000000005",
+        "name": "Lemon Lotion",
+        "description": "Freshly squeezed lemon juice, as well as the added Alpha Hydroxy Acids, gently exfoliate the skin to reveal brighter, smoother skin. Aloe Vera Juice, as well as glycerin, keeps skin moisturized for longer. ",
+        "price": 7,
+        "rating": 4,
+        "image": "lemon_lotion.jpg"
+      }
+    },
+  
+    {
+      "pk": 6,
+      "model": "products.product",
+      "fields": {
+        "sku": "ns0000000006",
+        "name": "Baby Oil",
+        "description": "Baby Oil is a blend of herbs infused in oil to keep baby’s skin smooth and supple. The hero herb in this rich medley is Red Acalypha – an ethnobotanical herb passed down for generations in Nigerian culture and used successfully to maintain skin health of babies and children. ",
+        "price": 15,
+        "rating": 5,
+        "image": "baby_oil.jpg"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.product",
+      "fields": {
+        "sku": "ns0000000007",
+        "name": "Moisture Leave-in Conditioner",
+        "description": "Moisture & Shine Leave-in conditioner with Shea Butter Ready for lots of plant extracts and nourishing Shea Butter? A symphony of hair strengthening and nourishing herbs come together in Natural Nigerian™ Moisture & Shine Leave-in conditioner to leave hair feeling and staying softer and moisturized for longer. ",
+        "price": 10,
+        "category": 4.8,
+        "image": "leave_in.jpeg"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.product",
+      "fields": {
+        "sku": "ns0000000008",
+        "name": "Lemon & Eucalyptus Black Soap",
+        "description": "Lemongrass & Eucalyptus Black Soap is made from an ancient recipe that has been passed down through the generations. Black soap is known for its gentle, deep cleansing abilities. Our special mix of Lemongrass and Eucalyptus essential oils has the aroma-therapeutic benefit of relieving stress. Generous amounts of Organic Aloe Vera Juice and Glycerin keeps skin moisturized for longer. It has been specially formulated to help you relax. ",
+        "price": 20.50,
+        "category": 5,
+        "image": "lemon_eucalyptus.jpg"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.product",
+      "fields": {
+        "sku": "ns00000000009",
+        "name": "Soap Set",
+        "description": "Handmade soap made with natural ingredients ",
+        "price": 45.99,
+        "category": 5,
+        "image": "soap_set.jpg"
+      }
+    }
+  ]
