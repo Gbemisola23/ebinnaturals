@@ -7,7 +7,7 @@
         "name": "Raw Unrefined Shea Butter Whipped",
         "description": "Our Premium Butter can be used for hair, body, on babies and more",
         "price": 15.99,
-        "category": 2,
+        "rating": 4,
         "image": "shea_butter.jpg"
       }
     },
@@ -33,7 +33,7 @@
         "name": "Dudu Osun Soap",
         "description": "ECO-FRIENDLY: Dudu-Osun black soap, consisting of 100% natural ingredients. Fully biologically amortizable. No artificial fragrances, colors or preservatives.Cleansing, caring, refreshing and protective for your skin.. ",
         "price": 9.50,
-        "rating": 4.5,
+        "rating": 4,
         "image": "dudu_osun_black_soap.jpeg"
       }
     },
@@ -47,7 +47,7 @@
         "description": "This is made from an ancient recipe that has been passed down through the generations. Black soap is known for its gentle, deep cleansing abilities. Looking for a wake up call? Our special mix of these Essential Oils will jump start your day.",
         "price": 5,
         "rating": 4,
-        "image": "moroccanoil_mint_soap.webp.jpg"
+        "image": "moroccanoil_mint_soap.jpg"
       }
     },
     {
@@ -83,7 +83,7 @@
         "name": "Moisture Leave-in Conditioner",
         "description": "Moisture & Shine Leave-in conditioner with Shea Butter Ready for lots of plant extracts and nourishing Shea Butter? A symphony of hair strengthening and nourishing herbs come together in Natural Nigerian™ Moisture & Shine Leave-in conditioner to leave hair feeling and staying softer and moisturized for longer. ",
         "price": 10,
-        "category": 4.8,
+        "rating": 4,
         "image": "leave_in.jpeg"
       }
     },
@@ -95,7 +95,7 @@
         "name": "Lemon & Eucalyptus Black Soap",
         "description": "Lemongrass & Eucalyptus Black Soap is made from an ancient recipe that has been passed down through the generations. Black soap is known for its gentle, deep cleansing abilities. Our special mix of Lemongrass and Eucalyptus essential oils has the aroma-therapeutic benefit of relieving stress. Generous amounts of Organic Aloe Vera Juice and Glycerin keeps skin moisturized for longer. It has been specially formulated to help you relax. ",
         "price": 20.50,
-        "category": 5,
+        "rating": 5,
         "image": "lemon_eucalyptus.jpg"
       }
     },
@@ -107,7 +107,7 @@
         "name": "Soap Set",
         "description": "Handmade soap made with natural ingredients ",
         "price": 45.99,
-        "category": 5,
+        "rating": 5,
         "image": "soap_set.jpg"
       }
     }
