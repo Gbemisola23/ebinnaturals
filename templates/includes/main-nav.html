@@ -17,10 +17,10 @@
                 Soap
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="soap-link">
-                <a href="" class="dropdown-item">Dry Skin</a>
-                <a href="" class="dropdown-item">Exfoliants</a>
-                <a href="" class="dropdown-item">Face</a>
-                <a href="" class="dropdown-item">All Soap</a>
+                <a href="{% url 'products' %}?category=body" class="dropdown-item">Body</a>
+                <a href="{% url 'products' %}?category=exfoliants"  class="dropdown-item">Exfoliants</a>
+                <a href="{% url 'products' %}?category=face"  class="dropdown-item">Face</a>
+                <a href="{% url 'products' %}?category=body,exfoliants,face"  class="dropdown-item">All Soap</a>
             </div>
         </li>
 
@@ -29,9 +29,9 @@
                 Hair
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="hair-link">
-                <a href="" class="dropdown-item">Baby</a>
-                <a href="" class="dropdown-item">Leave-in Conditioners</a>
-                <a href="" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?category=baby"  class="dropdown-item">Baby</a>
+                <a href="{% url 'products' %}?category=conditioners"  class="dropdown-item">Conditioners</a>
+                <a href="{% url 'products' %}?category=baby,conditioners"  class="dropdown-item">All Products</a>
             </div>
         </li>
 
@@ -40,8 +40,8 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
             </div>
         </li>
     </ul>
