@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, HttpResponse
 
 def view_bag(request):
     """ A view that renders the bag contents page """
@@ -25,21 +25,11 @@ def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
 
     quantity = int(request.POST.get('quantity'))
-    if 'product_size' in request.POST:
-        size = request.POST['product_size']
     bag = request.session.get('bag', {})
 
-    if size:
-        if quantity > 0:
-            bag[item_id]['items_by_size'][size] = quantity
-        else:
-            del bag[item_id]['items_by_size'][size]
-            if not bag[item_id]['items_by_size']:
-                bag.pop(item_id)
-    else:
-        if quantity > 0:
+    if quantity > 0:
             bag[item_id] = quantity
-        else:
+    else:
             bag.pop(item_id)
 
     request.session['bag'] = bag
@@ -50,14 +40,15 @@ def remove_from_bag(request, item_id):
     """Remove the item from the shopping bag"""
 
     try:
-        size = None
-        if 'product_size' in request.POST:
-            size = request.POST['product_size']
+        quantity = None
+        if 'product_quantity' in request.POST:
+            quantity = request.POST['product_quantity']
         bag = request.session.get('bag', {})
 
-        if size:
-            del bag[item_id]['items_by_size'][size]
-            if not bag[item_id]['items_by_size']:
+        
+        if quantity:
+            del bag[item_id]['items_by_quantity'][quantity]
+            if not bag[item_id]['items_by_quantity']:
                 bag.pop(item_id)
         else:
             bag.pop(item_id)
