@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', )
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ebinnaturals.herokuapp.com', "localhost"]
+ALLOWED_HOSTS = ['8000-gbemisola23-ebinnatural-r846hhnqlfx.ws-eu98.gitpod.io', 'localhost']
 
 
 # Application definition
@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
+    'contactus',
 
     # Other
     'crispy_forms',
