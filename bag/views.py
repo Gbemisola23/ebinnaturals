@@ -18,12 +18,11 @@ def add_to_bag(request, item_id):
 
     if item_id in list(bag.keys()):
         bag[item_id] += quantity
-        messages.success(request, f'Updated {product.name} quantity to {bag[item_id]}')
+        messages.success(request, f'Added {product.name} to your bag')
     else:
         bag[item_id] = quantity
-        messages.success(request, f'Added {product.name} to your bag')
-        
-
+        messages.success(
+            request, f'{product.name}, added to your shopping bag!')
     request.session['bag'] = bag
     return redirect(redirect_url)
 
@@ -49,7 +48,6 @@ def remove_from_bag(request, item_id):
 
     try:
         product = get_object_or_404(Product, pk=item_id)
-        quantity = None
         if 'product_quantity' in request.POST:
             quantity = request.POST['product_quantity']
         bag = request.session.get('bag', {})
