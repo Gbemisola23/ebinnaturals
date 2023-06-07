@@ -3,11 +3,20 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+}
+
+.hero-image {
+    background: url('/media/homepage_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 80%;
+    flex: auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 /* Product image */
@@ -181,6 +190,8 @@ input[name='q']::placeholder {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+
 
 
 
