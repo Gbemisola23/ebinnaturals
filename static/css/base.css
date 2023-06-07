@@ -10,6 +10,11 @@ body {
     font-family: 'Lato';
 }
 
+/* Product image */
+.img-fluid {
+    position: relative;
+    height: 250px
+}
 
 /* from Bulma */
 .icon {
