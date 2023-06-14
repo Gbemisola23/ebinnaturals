@@ -1,9 +1,12 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.utils.timezone import now
+
 
 
 class Post(models.Model):
     title = models.CharField(max_length=200)
+    slug = models.SlugField(max_length=130, unique=True)
     content = models.TextField()
     image = models.ImageField(null=True, blank=True)
     pub_date = models.DateTimeField(auto_now_add=True)

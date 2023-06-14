@@ -8,3 +8,6 @@ Tutor support guided me in finding the django-allauth directory.
 Images
 Homepage banner image by Silvia from pixabay
 Image by Freepik
+
+blog
+https://www.kitchen-concoctions.com/2012/05/avocado-banana-hair-mask/
