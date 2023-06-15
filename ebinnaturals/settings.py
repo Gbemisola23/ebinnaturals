@@ -2,6 +2,8 @@ import os
 import dj_database_url
 
 from pathlib import Path
+if os.path.exists('env.py'):
+    import env
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -13,7 +15,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY','' )
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ebinnaturals.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['https://ebinnaturals.herokuapp.com/', 'localhost']
 
 
 # Application definition
@@ -111,10 +113,12 @@ WSGI_APPLICATION = 'ebinnaturals.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
      
 if 'DATABASE_URL' in os.environ:
+    print('connected to: ELEPHANT')
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
+    print('connected to: SQLITE3')
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
