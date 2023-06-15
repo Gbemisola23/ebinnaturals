@@ -1,4 +1,4 @@
-# PACK AND STASH
+# p
 ## Introduction
 
 Pack and Stash is a fictional B2C e-commerce store that is  designed and implemented with Python and Django, HTML, CSS and some Javascript. It specialises in selling home organization products to consumers online. However it has to be noted that this site is for educational use only.
