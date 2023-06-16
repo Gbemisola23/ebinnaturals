@@ -1,46 +1,87 @@
-# EbinNaturals
-## Introduction
+# **_EbinNaturals - Project Portfolio 5 - Django Full Stack Framework_**
+* ## Introduction
 
-EbinNaturals is a fictional B2C e-commerce store that is  designed and implemented with Python and Django, HTML, CSS and some Javascript. It specialises in selling beauty products to consumers online. However it has to be noted that this site is for educational use only.
+      EbinNaturals is a fictional B2C e-commerce store that is  designed and implemented with Python and Django, HTML, CSS and some Javascript. It specialises in selling beauty products to consumers online. However it has to be noted that this site is for educational use only.
 
-Link to deployed site can be found [Here](https://ebinnaturals.herokuapp.com/)
+   Link to deployed site can be found [Here](https://ebinnaturals.herokuapp.com/)
 
-## Showcase
-![Home page](static/images/homepage.jpg)
+* ## Showcase
+      ![Home page](static/images/homepage.jpg)
 
-### Strategy
-* EbinNaturals is a B2C type of business. Due to pressure of life amongst us from work and family, people have opeted for online shopping. EbinNaturals aims to offer flexible online shopping to its customers by availing them to natural readymade homemade recipes that saves them time.
+# Contents
+
+* [**Strategy**](<#strategy>)
+* [**Colour Scheme**](<#colour-scheme>)
+* [**User Experience UX**](<#user-experience-ux>)
+    *  [Database](<#database>)
+    *  [Design](<#design>)
+    *  [Navigation](<#navigation>)
+    *  [Ecommerce type](<#Ecommerce>)
+  
+* [**Features**](<#features>)
+    * [**Home**](<#navigation-menu>)
+         * [Home](<#home>)
+         * [Navigation Menu](<#navigation-menu>)
+         * [Log In](<#log-in>)
+         * [Contact](<#contact>)
+         * [Footer](<#footer>)
+    * [**Future Features**](<#future-features>)
+         * [Testimonials](<#testimonials>)
+         * [Latest News](<#latest-news>)
+         * [Newsletter](<#latest-news>)
+* [**Technologies Used**](<#technologies-used>)
+* [**Manual and Automated Testing**](<#manaual and automated testing>)
+* [**Deployment**](<#deployment>)
+* [**Credits**](<#credits>)
+    * [**Content**](<#content>)
+    * [**Media**](<#media>)
+*  [**Acknowledgments**](<#acknowledgements>)
+
+
+* ### Strategy
+      EbinNaturals is a B2C type of business. Due to pressure of life amongst us from work and family, people have opeted for online shopping. EbinNaturals aims to offer flexible online shopping to its customers by availing them to natural readymade homemade recipes that saves them time.
+
+* ### Colour Scheme
+      The colour scheme eventually chosen is one based on a green, black and white. This colour scheme gives off a earthly, warm and clean feeling to the website.
+
+![Colour Palette image](static/images/ebin_colorpalette.png)
+
 
 # UX
 ## User stories
-## As Admin
-* As a admin I can manage users' accounts so that I can make any required changes to them if needed
-* As a admin I can manage products so that I can add , update or delete products when necessary
-* As a admin I can view created orders so that I can full fill the orders or amend if needed
-* As a Admin I can delete any of comments so that I can remove them if I nolonger feel they are still necessary or needed
-* As a Admin I can view messages sent via contact form so that I can act upon them
-* As an admin I can manage the blog content so that I can make amendments if needed
+* ### As Admin
+      * As admin I can manage user's accounts so that I can make any required changes to them if needed
+      * As admin I can manage products so that I can create,edit, update or delete products when necessary
+      * As admin I can view created orders so that I can full fill the orders or amend if needed
+      * As admin I can delete  comments so that I can remove them if I nolonger feel they are still necessary or needed
+      * As admin I can view messages sent via contact form so that I can act upon them
+      * As admin I can manage the blog content so that I can make amendments if needed
 
-## As a site user
-* As a site user I can create or edit my account so that I can update my details accordingly
-* As a site user I can login in my account so that I can view my order history
-* As a site user I can search for products so that I can find specific products
-* As a site user I can sort products on criteria such as price and category so that I can I have a method of ordering the products
-products as I prefer
-* As a site user I can browse through products so that I can decide what I may be interested in buying
-* As a site user I can look at product details so that I can decide if I want to purchase it
-* As a site user I can easily add products I want to purchase to a basket so that I can decide whether to purchase or not
-* As a site user I can view the contents of my shopping basket so that I can be able to make any adjustments
-* As a site user I can update my bag by adding more or remove products so that I can decide on the number of products I intend to buy
-* As a site user I can view my order summary so that I can verify it before confirming
-* As a site user I can checkout securely so that I can I maintain the level of trust on the site
-* As a site user I can view paginated posts so that I can select which posts to view
-* As a site user I can view all posts so that I can decide what I may be interested in reading
-* As a site user I can comment to the blog posts so that I can express my opinion to the post
-* As a site user I can use the contact form so that I can contact the site owners
-* As a site user I can sign up to newsletter so that I can keep updated on the latest news
+* ### As a site user
+       * As a site user I can easily register an  account so that I can have a personal account
+      * As a site user I can login in my account so that I can view my order history
+      * As a site user I can easily login and logout so that I can I can access my personal information.
+      * As a site user I can easily recover my password if I forget so that I can recover access to my account.
+      * As a site user I can receive an email confirmation after registering so that I can verify that my account registration was successful.
+      * As a site user I can have a peronalized user profile so that I can view my perosnal order history and order confirmations and save my perosnal information.
+      * As a site user I can search for products by name or description so that I can find the best rated products in a specific category.
+      * As a site user I can sort multiple categories of products simultaneously so that I can find the best rated across broad categories.
+      * As a site user I can view list of products so that I can select the one to purchase
+      * As a site user I can look at product details so that I can view the price and other product details.
+      * As a site user I can view the contents of my shopping bag so that I can be able to make any adjustments.
+      * As a site user I can view the total of my purchase so that I can avoid spendingg too much.
+      * As a site user I can update my bag by adding more or remove products so that I can decide on the number of products I intend to buy
+      * As a site user I can identify deals and clearance so that I can take advantage of special savings on products.
+      * As a site user I can view my order summary so that I can verify it before confirming
+      * As a site user I can easily select the quantity of a product so that I can ensure I select the right quantity.
+      * As a site user I can checkout securely so that I can I maintain the level of trust on the site
+      * As a site user I can view paginated posts so that I can select which posts to view
+      * As a site user I can view all posts so that I can decide what I may be interested in reading
+      * As a site user I can comment to the blog posts so that I can express my opinion to the post
+      * As a site user I can use the contact form so that I can contact the site owners
+      * As a site user I can sign up to newsletter so that I can keep updated on the latest news
 
-## Database
+* ### Database
 
 <details>
   <summary>Click here to view Database Schema:</summary>
@@ -49,10 +90,10 @@ products as I prefer
 
 </details>
 
-## Design
-Before I wrote any code for this site, I had to pin point a simple design of what I wanted my site to look like by using wireframes, not only for myself but as well of communicating what I wanted to archieve to my mentor.
+* ### Design
+      Before I wrote any code for this site, I had to pin point a simple design of what I wanted my site to look like by using wireframes, not only for myself but as well of communicating what I wanted to archieve to my mentor.
 
-<details>
+   <details>
   <summary>Click here to view Wireframes:</summary>
 
   ![](static/images/Screenshot_5.jpg)
@@ -65,165 +106,168 @@ Before I wrote any code for this site, I had to pin point a simple design of wha
  
   </details>
 
-## Navigation
-I went on to create a flowchart to help me visualise website structure.
-<details>
+* ### Navigation
+      I went on to create a flowchart to help me visualise website structure.
+   <details>
   <summary>Click here to view the navigation:</summary>
 
   ![](static/images/navigation.png)
 
 </details>
 
-## E-commerce type
+* ### E-commerce type
 
-Pack and stash just to emphasisenis an online store that sells directly to customers. The functionality on this site for a regular customer is ability to make a purchase swiflty and quickly. For the owners, the goal is to archieve CRUD functionality.
-## Marketing
-Though there are a lot of marketing techniques for businesses, Pack and Stash decided to first use the cheaper way, that is facebook to drive out content and engage with customers. Visit our facebook page [here](https://www.facebook.com/profile.php?id=100090536471512). 
+      Pack and stash just to emphasis an online store that sells directly to customers. The functionality on this site for a regular customer is ability to make a purchase swiflty and quickly. For the owners, the goal is to archieve CRUD functionality.
+* ### Marketing
+      Though there are a lot of marketing techniques for businesses, Pack and Stash decided to first use the cheaper way, that is facebook to drive out content and engage with customers. Visit our facebook page [here](https://www.facebook.com/profile.php?id=100090536471512). 
 
-# Features
-## Homepage
+## Features
+* ### Homepage
 
-To start off, clicking the pack and stash url takes you to the home page with a logo on the left, my account and shopping bag to the right, a search bar followed by a navigation menu and footer. All these appear on every page on the site. Also found on home page is  a hero image accompanied by a hero text, and a shop now button beneath it.
-### Header and navigation
+      To start off, clicking the pack and stash url takes you to the home page with a logo on the left, my account and shopping bag to the right, a search bar followed by a navigation menu and footer. All these appear on every page on the site. Also found on home page is  a hero image accompanied by a hero text, and a shop now button beneath it.
+* ### Header and navigation
 
-![header](static/images/Screenshot_13.jpg)
+      ![header](static/images/Screenshot_13.jpg)
 
-### The home page
+* ### The home page
 
 ![home](static/images/home.jpg)
-### Register/Sign up
-On the right side of the home page, for the first time user they will need to register their account to enjoy most of the site benefits such as saving their orders, commenting on blogs. When registering users are asked their username, email and password
+
+* ### Register/Sign up
+      On the right side of the home page, for the first time user they will need to register their account to enjoy most of the site benefits such as saving their orders, commenting on blogs. When registering users are asked their username, email and password
 ![register](static/images/register.jpg)
 
-### Sign in
+* ### Sign in
 
-Registered users would need to sign in when they visit the site again. They will be asked to enter their username and password. The Remember me option is also available making life easier for returning users. Is users need to reset their password, a forgot password is also available.
+      Registered users would need to sign in when they visit the site again. They will be asked to enter their username and password. The Remember me option is also available making life easier for returning users. Is users need to reset their password, a forgot password is also available.
 
-![login](static/images/login.jpg)
+   ![login](static/images/login.jpg)
 
-### Logout
-Users are able to protecting their account by logging out of the site.
+* ### Logout
+      Users are able to protecting their account by logging out of the site.
 
 ![logout](static/images/logout.jpg)
 
-## All products
+* ### All products
 
-The first navigation link from the logo is all products. This is where you can display all products available. On this a user has a liberty to sort the products either by price or by category.
+      The first navigation link from the logo is all products. This is where you can display all products available. On this a user has a liberty to sort the products either by price or by category.
 
-![products](static/images/products.jpg)
+   ![products](static/images/products.jpg)
 
- ### Sort by price
+ * ### Sort by price
 
  ![logout](static/images/price.jpg)
 
- ### Sort by category
+ * ### Sort by category
  
- ![category](static/images/category.jpg)
+  ![category](static/images/category.jpg)
 
- ### Product detail and add to bag
+ * ### Product detail and add to bag
 
- Each product on site has a detailed information in form of a name, price,image, description and its category. The user is displayed with a quantity input box to select the quantity they need to add to the shopping bag either increasing or decreasing. They have an option to go back to products by clicking the keep shopping button.  Each time a user add a product to the bag they get a notification that alert them of that action.
+      Each product on site has a detailed information in form of a name, price,image, description and its category. The user is displayed with a quantity input box to select the quantity they need to add to the shopping bag either increasing or decreasing. They have an option to go back to products by clicking the keep shopping button.  Each time a user add a product to the bag they get a notification that alert them of that action.
 
- ![detail](static/images/product_detail.jpg)
+   ![detail](static/images/product_detail.jpg)
 
- ![add to bag](static/images/add_bag.jpg)
+   ![add to bag](static/images/add_bag.jpg)
 
- ### The shopping bag
+ * ### The shopping bag
 
- Consists of the price, quantity of each item and sub total. User has an option to update their bag and or remove some items from bag. They can easily go back to products by clicking keep shopping or go to checkout.
+      Consists of the price, quantity of each item and sub total. User has an option to update their bag and or remove some items from bag. They can easily go back to products by clicking keep shopping or go to checkout.
 
-![bag](static/images/thebag.jpg)
+      ![bag](static/images/thebag.jpg)
 
-### Checkout
+* ### Checkout
 
-On the left side of the checkout is where user puts their information, and on the right side is a summary of their order that is the total, the delivery.
+      On the left side of the checkout is where user puts their information, and on the right side is a summary of their order that is the total, the delivery.
 
-![checkout](static/images/checkout.jpg)
-User has an option to save their information to a profile. Users will need to input the card number for payment. They still have an option to adjust the bag at this point by clicking the adjust bag, or then completing the order.
+   ![checkout](static/images/checkout.jpg)
 
-![checkout bottom](static/images/checkout2.jpg)
+      User have the option to save their information to a profile. Users will need to input the card number for payment. They still have an option to adjust the bag at this point by clicking the adjust bag, or then completing the order.
 
-### Checkout success
+   ![checkout bottom](static/images/checkout2.jpg)
 
-After completing an order, users receive an order confirmation with their details including order number.
-![order confirm](static/images/order_confirm.jpg)
+* ### Checkout success
 
-### Order confirmation email
+      After completing an order, users receive an order confirmation with their details including order number.
+   ![order confirm](static/images/order_confirm.jpg)
 
-![confirmation email](static/images/email.jpg)
+* ### Order confirmation email
 
-### Product detail- super user
+   ![confirmation email](static/images/email.jpg)
 
-If the user is the super user, they have an option to either delete or edit their product
-![detail](static/images/detail-super.jpg)
+* ### Product detail- super user
 
-### Product management- add product
+      If the user is the super user, they have an option to either delete or edit their product
+   ![detail](static/images/detail-super.jpg)
 
-Only super users are authorized to add products to products catalogue
+* ### Product management- add product
 
-![add product](static/images/add_product.png)
+      Only super users are authorized to add products to products catalogue
 
-### Product management- edit product
+   ![add product](static/images/add_product.png)
 
-Super users only can edit the product by editing either name, description, category, SKU, price and update image. An alert is also available to remind them what action they are performing. They can then update the changes or cancel.
+* ### Product management- edit product
 
-![edit](static/images/edit_product.png)
+      Super users only can edit the product by editing either name, description, category, SKU, price and update image. An alert is also available to remind them what action they are performing. They can then update the changes or cancel.
 
-### Product management- delete product
+   ![edit](static/images/edit_product.png)
 
-Super users only can as well delete the products from the site
+* ### Product management- delete product
 
-![delete](static/images/delete.jpg)
+      Super users only can as well delete the products from the site
 
-## Special offers
+   ![delete](static/images/delete.jpg)
 
-The site has special offers shoppers can take advantage of. From new arrivals to sale.
-### New Arrivals
+* ### Special offers
 
+      The site has special offers shoppers can take advantage of. From new arrivals to sale.
+
+* #### New Arrivals
 ![arrivals](static/images/arrivals.jpg)
 
-### Sale
+* ### Sale
+
 ![sale](static/images/sale.jpg)
 
-# Footer
+* ### Footer
 
-The footer appears on all pages of the site, it contains the newsletter sign up, about us, privacy policy, facebook and instagram
+      The footer appears on all pages of the site, it contains the newsletter sign up, about us, privacy policy, facebook and instagram
 
 ![footer](static/images/footer.jpg)
 
-## Newsletter
+* ### Newsletter
 
 Users can sign up using their email to receive news, offers and deals straight into their inbox.
 ![newsletter](static/images/newsletter.jpg)
 
-## About us
+* ### About us
 
-About us page describes in bried what the site is all about to the users. With a shop now now beneath that takes users to the products page
+      About us page describes in brief what the site is all about to the users. With a shop now now beneath that takes users to the products page
 
 ![about](static/images/about.jpg)
 
-## Privacy policy
+* ### Privacy policy
 
 ![privacy policy](static/images/privacy_policy.jpg)
 
-## Facebook
+* ### Facebook
 
-In terms of marketing, the site has a facebook page to push content.and target some of its customers through content creation
+      In terms of marketing, the site has a facebook page to push content.and target some of its customers through content creation
 
-![facebook](static/images/facebook.jpg)
+   ![facebook](static/images/facebook.jpg)
 
-![facebook](static/images/facebook2.jpg)
+   ![facebook](static/images/facebook2.jpg)
 
-# Blog
+* ### Blog
 
-Users can view all the blog articles and select which one to read by clicking the image
-![blog](static/images/blog.jpg)
+      Users can view all the blog articles and select which one to read by clicking the image
+   ![blog](static/images/blog.jpg)
 
-## Blog detail
+* ### Blog detail
 
-![blog detail](static/images/blog_detail.jpg)
+   ![blog detail](static/images/blog_detail.jpg)
 
-Only logged in users are permitted to comment on articles in as much as they can read other comments written by other users
+   Only logged in users are permitted to comment on articles in as much as they can read other comments written by other users
 
 ![comments](static/images/comments.jpg)
 
@@ -231,22 +275,22 @@ After logging in they can leave a comment on any blog article
 
 ![comment](static/images/comment.jpg)
 
-# Blog management
+### Blog management
 
-## Add blog
+* ### Add blog
 
-Super users are the creators of the blog articles. To add a new blog they have to put title, slug, body and image and then save
+      Super users are the creators of the blog articles. To add a new blog they have to put title, slug, body and image and then save.
 
 ![add blog](static/images/add_blog.png)
 
-## Edit blog
+* ### Edit blog
 
-Super users can also edit the blog and update the changes
+      Super users can also edit the blog and update the changes
 ![edit blog](static/images/edit_blog.png)
 
-## Delete post
+* ### Delete post
 
-If the post is no longer serving its purposes, super users can also delete it
+      If the post is no longer serving its purposes, super users can also delete it
 ![delete blog](static/images/deletepost.jpg)
 
 ## Delete comment
@@ -271,27 +315,26 @@ A 404 page is also available to handle navigation errors with a home link button
 
 ### Future features
 
-* Product rating
 * Users replying to other blog comments
 * Blog likes
 
 # Web marketing
 
-## Email marketing
+* ### Email marketing
 
-The free version of mailchimp was chosen with the current status of the business. Each user that signs up is added to the weekly newsletter and they might turn out to be future customers henceforth low cost to drive sales.
+      The free version of mailchimp was chosen with the current status of the business. Each user that signs up is added to the weekly newsletter and they might turn out to be future customers henceforth low cost to drive sales.
 
-## Search engine optimization
+* ### Search engine optimization
 
-SEO keywords
+      SEO keywords
 
 ![seo](static/images/seo.jpg)
 
-## Social media marketing
+* ### Social media marketing
 
-A facebook page was created to build community from the target market. Facebook is free and it also takes little to no time to set up and also it has so many users whom a business can strive to maintain a certain relationship, create content and connect with a target audience.
+      A facebook page was created to build community from the target market. Facebook is free and it also takes little to no time to set up and also it has so many users whom a business can strive to maintain a certain relationship, create content and connect with a target audience.
 
-![facebook](static/images/facebook.jpg)
+   ![facebook](static/images/facebook.jpg)
 
 ## Technologies
 ### Languages
@@ -340,7 +383,7 @@ A facebook page was created to build community from the target market. Facebook 
 ## Manual Testing
  | Feature | Test  | Expected Result | Actual Result |
 | -------------| ----- | ----- | :----: |
-| PACK AND STASH  | Selecting logo on homepage |  directs user back to homepage |  Pass |
+| EBINNATURALS  | Selecting logo on homepage |  directs user back to homepage |  Pass |
 | Search | Using the search box | Entering a search returns expected result  |  Pass |
 | Search no results | No search | Entering a no results search returns error message and shows all products  |  Pass |
 | Navigation Links  | Selecting navigation links |  directs user to relevant pages |  Pass |
@@ -348,6 +391,12 @@ A facebook page was created to build community from the target market. Facebook 
 | Back to top | Back to top arrow | Select the arrow box on the products page brings the user back to the top of the page  |  Pass |
 | Sort By  | Selecting the filter Sort |  successfully sort by price, name and category options |  Pass |
 | Shop Now button  | Selecting Shop Now button |  directs user to all  products page |  Pass |
+| Adjust quantity | Plus or minus button |  adjust the quantity of product |  Pass |
+| Add to bag | Adding to bag | successfully add products to bag| Pass |
+| Kep Shopping | Keep shopping button |  directs user back to all products page  |  Pass |
+| Delete from bag | deleting products from bag | successfully delete products from bag| Pass |
+| Shopping bag  | Shows the added products and total |  directs user to checkout page |  Pass |
+| Secure Checkout button  | Using the secure checkout button |  directs user to checkout form and payment details |  Pass |
 | About Us | Selecting About Us |  directs user to About Us page |  Pass |
 | Sign up for our newsletter | selecting Sign up for our newsletter |  directs user Sign up for our newsletter page |  Pass |
 | Privacy policy | Selecting privacy policy |  directs user to privacy policy|  Pass |
@@ -762,3 +811,4 @@ Image by Freepik
 
 blog
 https://www.kitchen-concoctions.com/2012/05/avocado-banana-hair-mask/
+https://coolors.co/51f05f-171616-f9f9f9/color palette

@@ -9,7 +9,6 @@ from .forms import ProductForm
 
 # Create your views here.
 
-@login_required
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
@@ -62,7 +61,6 @@ def all_products(request):
     return render(request, 'products/products.html', context)
 
 
-@login_required
 def product_detail(request, product_id):
     """ A view to show individual product details """
 
