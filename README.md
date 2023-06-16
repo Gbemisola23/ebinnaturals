@@ -1,15 +1,15 @@
-# p
+# EbinNaturals
 ## Introduction
 
-Pack and Stash is a fictional B2C e-commerce store that is  designed and implemented with Python and Django, HTML, CSS and some Javascript. It specialises in selling home organization products to consumers online. However it has to be noted that this site is for educational use only.
+EbinNaturals is a fictional B2C e-commerce store that is  designed and implemented with Python and Django, HTML, CSS and some Javascript. It specialises in selling beauty products to consumers online. However it has to be noted that this site is for educational use only.
 
-Link to deployed site can be found [Here](https://herokuapp.com/)
+Link to deployed site can be found [Here](https://ebinnaturals.herokuapp.com/)
 
 ## Showcase
 ![Home page](static/images/homepage.jpg)
 
 ### Strategy
-* Pack and Stash is a B2C type of business. Due to pressure of life amongst us from work/business to family not talking of pandemics, many of us are now opting for online shopping. Pack and Stash aims to offer flexible online shopping to its customers.
+* EbinNaturals is a B2C type of business. Due to pressure of life amongst us from work and family, people have opeted for online shopping. EbinNaturals aims to offer flexible online shopping to its customers by availing them to natural readymade homemade recipes that saves them time.
 
 # UX
 ## User stories
@@ -39,11 +39,6 @@ products as I prefer
 * As a site user I can comment to the blog posts so that I can express my opinion to the post
 * As a site user I can use the contact form so that I can contact the site owners
 * As a site user I can sign up to newsletter so that I can keep updated on the latest news
-
-### Strategy
-* Pack and Stash is a B2C type of business. Due to pressure of life amongst us from work/business to family not talking of pandemics, many of us are now opting for online shopping. Pack and Stash aims to offer flexible online shopping to its customers.
-
-## Architecture
 
 ## Database
 
