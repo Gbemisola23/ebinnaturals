@@ -39,7 +39,7 @@
 
 
 * ### Strategy
-      EbinNaturals is a B2C type of business. Due to pressure of life amongst us from work and family, people have opeted for online shopping. EbinNaturals aims to offer flexible online shopping to its customers by availing them to natural readymade homemade recipes that saves them time.
+      EbinNaturals is a B2C type of e-commerce business. Due to pressure of lif from work aend family, people have opted for online shopping. EbinNaturals aims to offer flexible online shopping to its customers by availing them to natural readymade homemade recipes that saves them time.
 
 * ### Colour Scheme
       The colour scheme eventually chosen is one based on a green, black and white. This colour scheme gives off a earthly, warm and clean feeling to the website.
@@ -96,13 +96,15 @@
    <details>
   <summary>Click here to view Wireframes:</summary>
 
-  ![](static/images/Screenshot_5.jpg)
-  ![](static/images/Screenshot_3.jpg)
-  ![](static/images/Screenshot_4.jpg)
-  ![](static/images/Screenshot_6.jpg)
-  ![](static/images/Screenshot_7.jpg)
-  ![](static/images/Screenshot_8.jpg)
-  ![](static/images/Screenshot_9.jpg)
+  ![](static/images/HomePage.png)
+  ![](static/images/Product Listing Page.png)
+  ![](static/images/Product Detail Page.png)
+  ![](static/images/Bag.png)
+  ![](static/images/Checkout Page.png)
+  ![](static/images/Register.png)
+  ![](static/images/Blog.png)
+  ![](static/images/contactus copy.png.png)
+  
  
   </details>
 
@@ -117,21 +119,64 @@
 
 * ### E-commerce type
 
-      Pack and stash just to emphasis an online store that sells directly to customers. The functionality on this site for a regular customer is ability to make a purchase swiflty and quickly. For the owners, the goal is to archieve CRUD functionality.
+      EbinNaturals is an e-commerce online retail store that sells directly to customers. The functionality on this site for a customer is the ability to make purchases swiflty and efficiently. For the owners, the goal is to archieve CRUD products and other functionalities.
+
 * ### Marketing
-      Though there are a lot of marketing techniques for businesses, Pack and Stash decided to first use the cheaper way, that is facebook to drive out content and engage with customers. Visit our facebook page [here](https://www.facebook.com/profile.php?id=100090536471512). 
+      Though there are a lot of marketing techniques for businesses, EbiinNaturals decided to first use the cheaper way, that is facebook to drive its' content and engage with customers. Visit our facebook page [here](https://www.facebook.com/EbinNaturals). 
 
 ## Features
-* ### Homepage
+* ### Home Page
 
-      To start off, clicking the pack and stash url takes you to the home page with a logo on the left, my account and shopping bag to the right, a search bar followed by a navigation menu and footer. All these appear on every page on the site. Also found on home page is  a hero image accompanied by a hero text, and a shop now button beneath it.
-* ### Header and navigation
+     The website is designed to be welcoming and easy to use. It features a nav bar and nav links. It starts with the name of the website on the top left, search field in the midddle, my account and shopping bag to the right, followed by a navigation menu links,free shipping threshold text and footer. All these appear on every page on the site. Also found on home page is  a hero image accompanied by a hero text, and a shop now button beneath it.
 
-      ![header](static/images/Screenshot_13.jpg)
+![home](static/images/welcome_page.png)
 
-* ### The home page
+* ### The Nav bar
+      This nav bar can be seen on all pages of the website. 
+![header](static/images/home-nav.png)
 
-![home](static/images/home.jpg)
+* ### Shop Now
+      This takes the user to the list of all products.
+![shopnow](static/images/shop_now.png)
+
+* ### Products
+      This shows the list of all the products and their titles, prices and ratings.
+![products](static/images/products_home.png)
+
+
+ * ### Sort by price,rating, category
+      This shows the list of the products sorting the user can go through.
+ ![sorting](static/images/product_sort.png)
+
+
+ * ### Product detail and add to bag
+
+      Each product on site has a detailed information in form of a name, price,image, description and its category. The user is displayed with a quantity input box to select the quantity they need to add to the shopping bag either increasing or decreasing. They have an option to go back to products by clicking the keep shopping button.  Each time a user add a product to the bag they get a popup notification that alerts them of that action.
+
+   ![detail](static/images/product_detail.png)
+   ![bagmessage](static/images/bag_screenshot.png)
+
+
+ * ### The shopping bag
+
+      Consists of the price, quantity of each item and sub total. The User have an option to update their bag or remove some items from bag. They can easily go back to products by clicking keep shopping or go to checkout.
+
+      ![bag](static/images/shop_bag.png)
+
+* ### Checkout
+
+      On the left side of the checkout is where user puts their information, and on the right side is a summary of their order that is the total, the delivery.
+
+   ![checkout](static/images/checkout-bag.png)
+
+      User have the option to save their information to a profile. Users will need to input the card number for payment. They still have an option to adjust the bag at this point by clicking the adjust bag, or then completing the order.
+
+   ![checkout bottom](static/images/checkout_bottom.png)
+
+* ### Checkout success
+
+      After completing an order, users receive an order confirmation with their details including order number.
+   ![order confirm](static/images/order_confirm.jpg)
 
 * ### Register/Sign up
       On the right side of the home page, for the first time user they will need to register their account to enjoy most of the site benefits such as saving their orders, commenting on blogs. When registering users are asked their username, email and password
@@ -146,50 +191,6 @@
 * ### Logout
       Users are able to protecting their account by logging out of the site.
 
-![logout](static/images/logout.jpg)
-
-* ### All products
-
-      The first navigation link from the logo is all products. This is where you can display all products available. On this a user has a liberty to sort the products either by price or by category.
-
-   ![products](static/images/products.jpg)
-
- * ### Sort by price
-
- ![logout](static/images/price.jpg)
-
- * ### Sort by category
- 
-  ![category](static/images/category.jpg)
-
- * ### Product detail and add to bag
-
-      Each product on site has a detailed information in form of a name, price,image, description and its category. The user is displayed with a quantity input box to select the quantity they need to add to the shopping bag either increasing or decreasing. They have an option to go back to products by clicking the keep shopping button.  Each time a user add a product to the bag they get a notification that alert them of that action.
-
-   ![detail](static/images/product_detail.jpg)
-
-   ![add to bag](static/images/add_bag.jpg)
-
- * ### The shopping bag
-
-      Consists of the price, quantity of each item and sub total. User has an option to update their bag and or remove some items from bag. They can easily go back to products by clicking keep shopping or go to checkout.
-
-      ![bag](static/images/thebag.jpg)
-
-* ### Checkout
-
-      On the left side of the checkout is where user puts their information, and on the right side is a summary of their order that is the total, the delivery.
-
-   ![checkout](static/images/checkout.jpg)
-
-      User have the option to save their information to a profile. Users will need to input the card number for payment. They still have an option to adjust the bag at this point by clicking the adjust bag, or then completing the order.
-
-   ![checkout bottom](static/images/checkout2.jpg)
-
-* ### Checkout success
-
-      After completing an order, users receive an order confirmation with their details including order number.
-   ![order confirm](static/images/order_confirm.jpg)
 
 * ### Order confirmation email
 
@@ -261,7 +262,7 @@ Users can sign up using their email to receive news, offers and deals straight i
 * ### Blog
 
       Users can view all the blog articles and select which one to read by clicking the image
-   ![blog](static/images/blog.jpg)
+   ![blog](static/images/blogpost.png)
 
 * ### Blog detail
 
@@ -334,7 +335,7 @@ A 404 page is also available to handle navigation errors with a home link button
 
       A facebook page was created to build community from the target market. Facebook is free and it also takes little to no time to set up and also it has so many users whom a business can strive to maintain a certain relationship, create content and connect with a target audience.
 
-   ![facebook](static/images/facebook.jpg)
+   ![facebook](static/images/facebook_img.png)
 
 ## Technologies
 ### Languages
@@ -373,11 +374,8 @@ A 404 page is also available to handle navigation errors with a home link button
 
 * [AWS](https://aws.amazon.com/s3/) - for  object storage through a web service interface.
 
-* [Unsplash](https://unsplash.com/) - images used for the project
-
 * [Pexels](https://www.pexels.com/) - images used for the project
 
-* [Adobestock](https://stock.adobe.com/ie/) - images used for the project
 
 # Testing
 ## Manual Testing
@@ -812,3 +810,4 @@ Image by Freepik
 blog
 https://www.kitchen-concoctions.com/2012/05/avocado-banana-hair-mask/
 https://coolors.co/51f05f-171616-f9f9f9/color palette
+https://github.com/MikeR94/CI-Project-Portfolio-1/blob/main/README.md
