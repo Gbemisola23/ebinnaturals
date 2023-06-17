@@ -802,6 +802,7 @@ I uninstalled django and reinstalled it, thereafter running python3 manage.py mi
 
 2. I had this error "cp: cannot stat '../.pip-modules/lib/python3.7/site-packages/allauth/templates/*': No such file or directory" while trying to copy the templates recursively.
 Tutor support guided me in finding the django-allauth directory.
+3.While I wwas in the process of connecting django to S3 bucket I encountered the issue of heroku configset:DISABLE_COLLECTSTATIC which prevented a successful deployment from django. After several attempts I manually created a static file in the root directory and I manually uploaded in the S3 website.
 
 Images
 Homepage banner image by Silvia from pixabay
