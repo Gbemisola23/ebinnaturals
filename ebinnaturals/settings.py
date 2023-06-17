@@ -17,7 +17,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY','' )
 # DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-gbemisola23-ebinnatural-r846hhnqlfx.ws-eu100.gitpod.io', 'localhost']
+ALLOWED_HOSTS = ['ebinnaturals.herokuapp.com', 'localhost']
 
 
 # Application definition
