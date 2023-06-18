@@ -753,17 +753,10 @@ I then went to create a database to connect to the new created app.
 
 * Hello django code institute
 
-* [Dataflair django tutorial](https://data-flair.training/blogs/django-tutorials-home/)
-
 * [Stack overflow](https://stackoverflow.com/)
 
 Products description inspiration from
 
-* [The neat system](https://www.theneatsystem.co.za/)
-
-* [Amazon](https://www.amazon.co.uk/)
-
-* [Ikea](https://www.ikea.com)
 
 #### Blog content
 
