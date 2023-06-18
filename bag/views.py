@@ -1,10 +1,14 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import (
+    render, redirect, reverse, HttpResponse, get_object_or_404
+)
 from django.contrib import messages
 
 from products.models import Product
 
+
 def view_bag(request):
     """ A view that renders the bag contents page """
+
 
     return render(request, 'bag/bag.html')
 
@@ -23,6 +27,7 @@ def add_to_bag(request, item_id):
         bag[item_id] = quantity
         messages.success(
             request, f'{product.name}, added to your shopping bag!')
+
     request.session['bag'] = bag
     return redirect(redirect_url)
 
@@ -67,4 +72,3 @@ def remove_from_bag(request, item_id):
     except Exception as e:
         messages.error(request, f'Error removing item:{e}')
         return HttpResponse(status=500)
-

@@ -1,7 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from django.urls import reverse_lazy
 from django.views.generic import ListView
-from django.contrib.auth.mixins import LoginRequiredMixin
 from . import views
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -28,7 +26,7 @@ def post_detail(request, slug):
         else:
             user = request.user
             content = request.POST.get('content', '')
-            comment = Comment(user=user, body=body, post_id=post)
+            comment = Comment(user=user, body=content, post_id=post)
             comment.save()
 
     template = 'blog/post_detail.html'
