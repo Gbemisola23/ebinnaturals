@@ -16,4 +16,4 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     path('contactus/', include('contactus.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-handler404 = 'ebinaturals.views.handler404'
+handler404 = 'ebinnaturals.views.handler404'
