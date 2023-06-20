@@ -191,6 +191,14 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+/* Footer */
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px;
+    width: 600px;
+
+}
 
 
 /* -------------------------------- Media Queries */
