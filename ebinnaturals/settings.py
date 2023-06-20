@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'contactus',
     'django_summernote',
     'blog',
+    'newsletter',
 
     # Other
     'crispy_forms',
