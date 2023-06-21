@@ -89,13 +89,10 @@
 
 
 * ### Database
+      I created a a sketch of the database diagram. Due to the site's frre plan, I can only create 15 tables.
+   
+ Link to database diagram can be found [Here](https://drawsql.app/teams/gbemisola-ajebeku/diagrams/ebin)
 
-<details>
-  <summary>Click here to view Database Schema:</summary>
-
-  ![](static/images/schema.png)
-
-</details>
 
 * ### Design
       Before I wrote any code for this site, I had to pin point a simple design of what I wanted my site to look like by using wireframes.
