@@ -18,7 +18,6 @@
 * [**User Experience UX**](<#user-experience-ux>)
     *  [Database](<#database>)
     *  [Design](<#design>)
-    *  [Navigation](<#navigation>)
     *  [Ecommerce type](<#Ecommerce>)
   
 * [**Features**](<#features>)
@@ -111,12 +110,6 @@
  
   </details>
 
-* ### Navigation
-      I went on to create a flowchart to help me visualise website structure.
-   <details>
-  <summary>Click here to view the navigation:</summary>
-
-  ![](static/images/navigation.png)
 
 </details>
 
@@ -196,46 +189,13 @@
    ![login](static/images/login.jpg)
 
 * ### Logout
-      Users are able to protecting their account by logging out of the site.
+      Users are able to protect their account by logging out of the site.
 
 
 * ### Order confirmation email
 
    ![confirmation email](static/images/email.jpg)
 
-* ### Product detail- super user
-
-      If the user is the super user, they have an option to either delete or edit their product
-   ![detail](static/images/detail-super.jpg)
-
-* ### Product management- add product
-
-      Only super users are authorized to add products to products catalogue
-
-   ![add product](static/images/add_product.png)
-
-* ### Product management- edit product
-
-      Super users only can edit the product by editing either name, description, category, SKU, price and update image. An alert is also available to remind them what action they are performing. They can then update the changes or cancel.
-
-   ![edit](static/images/edit_product.png)
-
-* ### Product management- delete product
-
-      Super users only can as well delete the products from the site
-
-   ![delete](static/images/delete.jpg)
-
-* ### Special offers
-
-      The site has special offers shoppers can take advantage of. From new arrivals to sale.
-
-* #### New Arrivals
-![arrivals](static/images/arrivals.jpg)
-
-* ### Sale
-
-![sale](static/images/sale.jpg)
 
 * ### Footer
 
@@ -245,26 +205,18 @@
 
 * ### Newsletter
 
-Users can sign up using their email to receive news, offers and deals straight into their inbox.
-![newsletter](static/images/newsletter.jpg)
+Users can subscribe via their email to receive news, offers and deals straight into their inbox.
+![newsletter](static/images/newsletter_signup.png)
 
-* ### About us
-
-      About us page describes in brief what the site is all about to the users. With a shop now now beneath that takes users to the products page
-
-![about](static/images/about.jpg)
 
 * ### Privacy policy
 
-![privacy policy](static/images/privacy_policy.jpg)
+![privacy policy](static/images/privacy_policy.png)
 
 * ### Facebook
 
-      In terms of marketing, the site has a facebook page to push content.and target some of its customers through content creation
-
-   ![facebook](static/images/facebook.jpg)
-
-   ![facebook](static/images/facebook2.jpg)
+      In terms of marketing, the website has a business facebook page to advertise it's products and services.
+   ![facebook](static/images/facebook_img.png)
 
 * ### Blog
 
@@ -309,22 +261,23 @@ Super users have the ability to delete comments that seem inappropriate
 # Contact us
 
 A contact us page is available for users who need to get in touch with the store owners. They have to put their name, email, the topic and the overall message before sending.
-![contact](static/images/contact.jpg)
+![contact](static/images/facebook_img.png)
 
 # My Profile
 
-The my profile page displays a user's saved contact infomation and their order history
+The my profile page displays a user's saved contact infomation and their order history.
 ![profile](static/images/profile.jpg)
 
 # 404 page
 
-A 404 page is also available to handle navigation errors with a home link button to take them back to the home page
-![error handling](static/images/404.jpg)
+A 404 page is also available to handle navigation errors with a home link button to take them back to the home page.
+![error handling](static/images/facebook_img.png)
 
 ### Future features
 
-* Users replying to other blog comments
-* Blog likes
+* Users replying to other blog comments.
+* Blog likes.
+* Additional blog posts.
 
 # Web marketing
 
@@ -373,8 +326,6 @@ A 404 page is also available to handle navigation errors with a home link button
 
 * [PEP8ci](https://pep8ci.herokuapp.com/) - I used it to validate python code
 
-* [Balsamiq](https://balsamiq.com/) - was used to draw wireframes
-
 * [dbdiagram](https://dbdiagram.io/home) - was used to draw the database schema
 
 * [Stripe](https://stripe.com/en-ie) - was used for checkout functionality and facilitate online payments
@@ -382,6 +333,8 @@ A 404 page is also available to handle navigation errors with a home link button
 * [AWS](https://aws.amazon.com/s3/) - for  object storage through a web service interface.
 
 * [Pexels](https://www.pexels.com/) - images used for the project
+
+* 
 
 
 # Testing
@@ -507,15 +460,6 @@ I also tested this site on [WAVE Web Accessibility Evaluation Tool](https://wave
 </details> 
 
 <details>
-<summary>About us</summary>
-
-![](static/images/webabout_us.jpg)
-
-Fixed the alerts by adding an h2 level heading to shop now button
-
-</details> 
-
-<details>
 <summary>Privacy policy</summary>
 
 ![](static/images/webprivacy_policy.jpg)
@@ -536,16 +480,12 @@ Fixed the alerts by adding an h2 level heading to shop now button
 
 ![](static/images/webblog_detail.jpg)
 
-I had no intention to add a heading on this page as well as adding headings to blog articles. Changed all comments tag to a paragraph
-
 </details> 
 
 <details>
   <summary>Blog</summary>
 
 ![](static/images/web_blog.jpg)
-
-I added the first level heading as i realized it was necessary to keep the site uniform throughout
 
 </details> 
 
@@ -569,51 +509,40 @@ Fixed the alerts by adding specified headings both to newsletter and product pri
 </details> 
 
 <details>
-  
-<summary>Product detail</summary>
 
-![](static/images/webproduct_detail.jpg)
-
-I only have 2 colors black and white throughout the site except the footer border that has the same color with the contrast errror so I decided to skip
 
 </details> 
 
-<details>
-  
-<summary>Sign in</summary>
-
-![](static/images/sign_in.jpg)
-
-</details> 
-
+##  HTML TEST
  <details>
   <summary>Click here for Lighthouse results</summary>
  Desktop
 
-  ![](static/images/lighthouse_desktop.jpg)
+  ![Lighthouse_test](static/images/lighthouse_test.png)
 
 Mobile
 
-  ![](static/images/lighthouse_mobile.jpg)
+  ![Mobile](static/images/lighthouse_mobile.png)
  
   </details> 
 
   <details>
-  <summary>Click here for Markup results</summary>
+  <summary>Click here for HTML Markup results</summary>
 
-   ![](static/images/html_validator.jpg)
+   ![](static/images/htmlchecker_ebin.png)
 
   </details> 
 
+## CSS JIGSAW
   <details>
   <summary>Click here for CSS results </summary>
 
-  ![](static/images/css_validator.jpg)
+  ![css_test](static/images/jigsaw_css.png)
 
   </details> 
 
 
-### Javascript validation
+## Javascript validation
 I used JSlint to validate javascript found in some apps
 
 * bag app - semi colon warning
@@ -635,7 +564,9 @@ I used JSlint to validate javascript found in some apps
 
 ## Bugs
 
-For this project there were so many bugs I encountered from the beginning though some were minor. Some of them I ended up taking them to tutor support whom have been very helpful.
+   For this project there were so many major bugs I encountered during the project development. 
+   Some of them I ended up taking them to tutor support whom have been very helpful. 
+   Also, my dear husband who is also a developer who helped me to resolve issues that tutor support couldn't help with.
 
 ### Bug 1
 Toasts not showing/displaying - Having all the code set up properly and checking in chrome dev tools I could see they were rendering in my template however not displaying. To fix this (from tutor support), There is a script in base.html to show any toasts in postloadjs and in the template I wanted them to show up I had a {% block postloadjs %} without {{ block.super }} in it. This resulted in the block from base.html being overwritten by a blank block. Removing the blank block in the detail template fixed it.
@@ -696,7 +627,7 @@ I then went to create a database to connect to the new created app.
 
 * Select region button
 
-* Select a data center ner your. I selected EU-West-1(Ireland)
+* Select a data center near you. I selected EU-West-2(London)
 
 * Click Review
 
@@ -754,31 +685,28 @@ I then went to create a database to connect to the new created app.
 
 ## Credits
 
-* Images are from [Unsplash](https://unsplash.com/s/photos/home-organization), [Adobestock](https://stock.adobe.com/ie/), [Pexels](https://www.pexels.com/)
+* Images are from [Pixabay](https://pixabay.com/) , [Pexels](https://www.pexels.com/)
 
 * Code Institute Botique Ado walk through
 
+* I went through other student's project to get ideas and check theor readme but the one I used the most was from Pauline Rugwevera project  and MikeR94 Readme.
+
 * Hello django code institute
 
-* [Stack overflow](https://stackoverflow.com/)
+* [Stack overflow](https://stackoverflow.com/) for debugging issues.
 
-Products description inspiration from
+* [Coolors](https://coolors.com) for generating color palette.
 
 
 #### Blog content
 
-* [Home edit](https://thehomeedit.com/)
-* [Pretty organized home](https://www.organisedprettyhome.com/organise-kids-toys)
-* [Woman's day](https://www.womansday.com/)
-* [The neat method](https://neatmethod.com/)
+* [Blog link]()
 
 ### Acknowledgement and support
 
-* This whole chapter took me a year and 5 months to complete instead of a year due to circumstances beyond control. Despite all this I would love to extend my gratitude to Code institute and their amazing team.  The tutor support for this project in particular, Ed, Ger you guys did a superb job.
+* My very own lovely husband who supported me throughout this course, my mentor, tutor support and the slack community.
 
-* My Mentor Adegbenga Adeye sharp,straight and honest feedback
 
-* My very own lovely husband who funded this course
 
 
 
