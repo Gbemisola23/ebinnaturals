@@ -1,7 +1,7 @@
 {% load static %}
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+    
   <head>
     <!--  meta tags -->
     {% block meta %}
@@ -41,14 +41,14 @@
        
     <meta name="description" content="online natural body products for baby, men and women">
     <meta name="keywords"
-        content=<"handcrafted natural body products, body essentials, bath and body,
-        sustainable natural handcrafted natural bath and body products, african soap,
-        leave_in conditioners, baby body products,natural hair products, exfoliants,
-        face products,>
+        content="handcrafted natural body products,baby essentials, 
+        african soap, leave_in hair conditioners, exfoliants,
+        facials,">
         
-        title>EbinNaturals {% block extra_title %}
+        <title> EbinNaturals {% block extra_title %}
         {% endblock %}</title> 
   </head>
+
   <body>
     <!--Main header-->
     <header class="container-fluid fixed-top">
@@ -98,6 +98,7 @@
                         {% endif %}
                     </div>
                 </li>
+
                 <!--Shopping bag-->
                 <li class="list-inline-item">
                     <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
@@ -113,6 +114,7 @@
                         </div>
                     </a>
                 </li>
+
             </ul>
         </div>
       </div>
@@ -173,7 +175,7 @@
    <br>
    <br>
    <br>
-<!-- footer -->
+    <!-- footer -->
     <div class="text-center footer fixed-bottom bg-white">
         <footer>
             <div>
