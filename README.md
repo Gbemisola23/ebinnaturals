@@ -1,12 +1,13 @@
 # **_EbinNaturals - Project Portfolio 5 - Django Full Stack Framework_**
 * ## Introduction
 
-      EbinNaturals is a fictional B2C e-commerce store that is  designed and implemented with Python and Django, HTML, CSS and some Javascript. It specialises in selling beauty products to consumers online. However it has to be noted that this site is for educational use only.
+   EbinNaturals is a fictional B2C e-commerce store that is  designed and implemented with Python and Django, HTML, CSS and some Javascript. 
+   It specialises in selling beauty products to consumers online. However it has to be noted that this site is for educational use only.
 
    Link to deployed site can be found [Here](https://ebinnaturals.herokuapp.com/)
 
 * ## Showcase
-      ![Home page](static/images/homepage.jpg)
+      ![Home page](static/images/home_mockup.png)
 
 # Contents
 
@@ -39,10 +40,12 @@
 
 
 * ### Strategy
-      EbinNaturals is a B2C type of e-commerce business. Due to pressure of lif from work aend family, people have opted for online shopping. EbinNaturals aims to offer flexible online shopping to its customers by availing them to natural readymade homemade recipes that saves them time.
+      EbinNaturals is a B2C type of e-commerce business. Due to pressure of life from work and family, 
+      people have opted for online shopping. EbinNaturals aims to offer flexible online shopping to its customers by availing them to natural readymade homemade recipes that saves them time.
 
 * ### Colour Scheme
-      The colour scheme eventually chosen is one based on a green, black and white. This colour scheme gives off a earthly, warm and clean feeling to the website.
+      The colour scheme eventually chosen is one based on a green, black and white. 
+      This colour scheme gives off a earthly, warm and clean feeling to the website.
 
 ![Colour Palette image](static/images/ebin_colorpalette.png)
 
@@ -121,6 +124,7 @@
 
       EbinNaturals is an e-commerce online retail store that sells directly to customers. The functionality on this site for a customer is the ability to make purchases swiflty and efficiently. For the owners, the goal is to archieve CRUD products and other functionalities.
 
+
 * ### Marketing
       Though there are a lot of marketing techniques for businesses, EbiinNaturals decided to first use the cheaper way, that is facebook to drive its' content and engage with customers. Visit our facebook page [here](https://www.facebook.com/EbinNaturals). 
 
@@ -131,25 +135,28 @@
 
 ![home](static/images/welcome_page.png)
 
+
 * ### The Nav bar
       This nav bar can be seen on all pages of the website. 
 ![header](static/images/home-nav.png)
 
+
 * ### Shop Now
       This takes the user to the list of all products.
 ![shopnow](static/images/shop_now.png)
+
 
 * ### Products
       This shows the list of all the products and their titles, prices and ratings.
 ![products](static/images/products_home.png)
 
 
- * ### Sort by price,rating, category
+* ### Sort by price,rating, category
       This shows the list of the products sorting the user can go through.
  ![sorting](static/images/product_sort.png)
 
 
- * ### Product detail and add to bag
+* ### Product detail and add to bag
 
       Each product on site has a detailed information in form of a name, price,image, description and its category. The user is displayed with a quantity input box to select the quantity they need to add to the shopping bag either increasing or decreasing. They have an option to go back to products by clicking the keep shopping button.  Each time a user add a product to the bag they get a popup notification that alerts them of that action.
 
@@ -157,7 +164,7 @@
    ![bagmessage](static/images/bag_screenshot.png)
 
 
- * ### The shopping bag
+* ### The shopping bag
 
       Consists of the price, quantity of each item and sub total. The User have an option to update their bag or remove some items from bag. They can easily go back to products by clicking keep shopping or go to checkout.
 
