@@ -1,13 +1,15 @@
 # **_EbinNaturals - Project Portfolio 5 - Django Full Stack Framework_**
 * ## Introduction
 
-   EbinNaturals is a fictional B2C e-commerce store that is  designed and implemented with Python and Django, HTML, CSS and some Javascript. 
-   It specialises in selling beauty products to consumers online. However it has to be noted that this site is for educational use only.
+   EbinNaturals is a fictional B2C e-commerce store that is  designed and implemented
+   with Django python web framework, HTML, CSS and some Javascript. 
+   It specialises in selling beauty products to consumers online. 
+   However, it has to be noted that this site is for educational use only.
 
    Link to deployed site can be found [Here](https://ebinnaturals.herokuapp.com/)
 
 * ## Showcase
-      ![Home page](static/images/home_mockup.png)
+![Home page](static/images/home_mockup.png)
 
 # Contents
 
@@ -41,11 +43,12 @@
 
 * ### Strategy
       EbinNaturals is a B2C type of e-commerce business. Due to pressure of life from work and family, 
-      people have opted for online shopping. EbinNaturals aims to offer flexible online shopping to its customers by availing them to natural readymade homemade recipes that saves them time.
+      people have opted for online shopping. EbinNaturals aims to offer flexible online shopping to 
+      its customers by availing them to natural readymade homemade recipes that saves them time.
 
 * ### Colour Scheme
       The colour scheme eventually chosen is one based on a green, black and white. 
-      This colour scheme gives off a earthly, warm and clean feeling to the website.
+      This colour scheme gives off a earthly, warm and happy feeling to the website.
 
 ![Colour Palette image](static/images/ebin_colorpalette.png)
 
@@ -84,6 +87,7 @@
       * As a site user I can use the contact form so that I can contact the site owners
       * As a site user I can sign up to newsletter so that I can keep updated on the latest news
 
+
 * ### Database
 
 <details>
@@ -94,19 +98,18 @@
 </details>
 
 * ### Design
-      Before I wrote any code for this site, I had to pin point a simple design of what I wanted my site to look like by using wireframes, not only for myself but as well of communicating what I wanted to archieve to my mentor.
-
+      Before I wrote any code for this site, I had to pin point a simple design of what I wanted my site to look like by using wireframes.
    <details>
-  <summary>Click here to view Wireframes:</summary>
+<summary>Click here to view Wireframes:</summary>
 
   ![](static/images/HomePage.png)
-  ![](static/images/Product Listing Page.png)
-  ![](static/images/Product Detail Page.png)
+  ![](static/images/product_detail_page.png)
+  ![](static/images/product_listing_page.png)
   ![](static/images/Bag.png)
-  ![](static/images/Checkout Page.png)
+  ![](static/images/checkout_page.png)
   ![](static/images/Register.png)
   ![](static/images/Blog.png)
-  ![](static/images/contactus copy.png.png)
+  ![](static/images/contactus_copy.png)
   
  
   </details>
