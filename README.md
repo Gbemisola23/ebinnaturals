@@ -63,7 +63,7 @@
       * As admin I can manage the blog content so that I can make amendments if needed
 
 * ### As a site user
-       * As a site user I can easily register an  account so that I can have a personal account
+      * As a site user I can easily register an  account so that I can have a personal account
       * As a site user I can login in my account so that I can view my order history
       * As a site user I can easily login and logout so that I can I can access my personal information.
       * As a site user I can easily recover my password if I forget so that I can recover access to my account.
@@ -88,14 +88,14 @@
 
 
 * ### Database
-      I created a a sketch of the database diagram. Due to the site's frre plan, I can only create 15 tables.
+      I created a a sketch of the database diagram. Due to the site's free plan, I can only create 15 tables.
    
  Link to database diagram can be found [Here](https://drawsql.app/teams/gbemisola-ajebeku/diagrams/ebin)
 
 
 * ### Design
       Before I wrote any code for this site, I had to pin point a simple design of what I wanted my site to look like by using wireframes.
-   <details>
+<details>
 <summary>Click here to view Wireframes:</summary>
 
   ![](static/images/HomePage.png)
@@ -115,13 +115,17 @@
 
 * ### E-commerce type
 
-      EbinNaturals is an e-commerce online retail store that sells directly to customers. The functionality on this site for a customer is the ability to make purchases swiflty and efficiently. For the owners, the goal is to archieve CRUD products and other functionalities.
+      EbinNaturals is an e-commerce B2C online retail store that sells directly to customers. The functionality on this site for a customer is the ability to make purchases swiflty and efficiently. For the owners, the goal is to archieve CRUD products and other functionalities.
 
 
 * ### Marketing
-      Though there are a lot of marketing techniques for businesses, EbiinNaturals decided to first use the cheaper way, that is facebook to drive its' content and engage with customers. Visit our facebook page [here](https://www.facebook.com/EbinNaturals). 
+      Though there are a lot of marketing techniques for businesses, EbiinNaturals decided to first use the cheaper way, that is facebook to drive its' content and engage with customers.
+   Visit our facebook page [Here](https://www.facebook.com/EbinNaturals/)
+
+
 
 ## Features
+
 * ### Home Page
 
      The website is designed to be welcoming and easy to use. It features a nav bar and nav links. It starts with the name of the website on the top left, search field in the midddle, my account and shopping bag to the right, followed by a navigation menu links,free shipping threshold text and footer. All these appear on every page on the site. Also found on home page is  a hero image accompanied by a hero text, and a shop now button beneath it.
@@ -161,7 +165,7 @@
 
       Consists of the price, quantity of each item and sub total. The User have an option to update their bag or remove some items from bag. They can easily go back to products by clicking keep shopping or go to checkout.
 
-      ![bag](static/images/shop_bag.png)
+   ![bag](static/images/shop_bag.png)
 
 * ### Checkout
 
@@ -173,7 +177,9 @@
 
    ![checkout bottom](static/images/checkout_bottom.png)
 
-* ### Checkout success
+
+
+<!-- * ### Checkout success -->
 
       After completing an order, users receive an order confirmation with their details including order number.
    ![order confirm](static/images/order_confirm.jpg)
@@ -689,7 +695,8 @@ I then went to create a database to connect to the new created app.
 
 * Code Institute Botique Ado walk through
 
-* I went through other student's project to get ideas and check theor readme but the one I used the most was from Pauline Rugwevera project  and MikeR94 Readme.
+* I went through other student's project to get ideas and check theor readme but the one I used the most was from 
+Pauline Rugwevera project and MikeR94 Readme.
 
 * Hello django code institute
 
