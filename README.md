@@ -55,36 +55,64 @@
 # UX
 ## User stories
 * ### As Admin
-      * As admin I can manage user's accounts so that I can make any required changes to them if needed
-      * As admin I can manage products so that I can create,edit, update or delete products when necessary
-      * As admin I can view created orders so that I can full fill the orders or amend if needed
-      * As admin I can delete  comments so that I can remove them if I nolonger feel they are still necessary or needed
+      * As admin I can manage user's accounts so that 
+         I can make any required changes to them if needed
+      * As admin I can manage products so that I can
+          create,edit, update or delete products when necessary
+      * As admin I can view created orders so that 
+         I can fullfill the orders or amend if needed
+      * As admin I can delete  comments so that
+          I can remove them if I nolonger feel they are still necessary or needed
       * As admin I can view messages sent via contact form so that I can act upon them
-      * As admin I can manage the blog content so that I can make amendments if needed
+      * As admin I can manage the blog content so 
+         that I can make amendments if needed
 
 * ### As a site user
-      * As a site user I can easily register an  account so that I can have a personal account
-      * As a site user I can login in my account so that I can view my order history
-      * As a site user I can easily login and logout so that I can I can access my personal information.
-      * As a site user I can easily recover my password if I forget so that I can recover access to my account.
-      * As a site user I can receive an email confirmation after registering so that I can verify that my account registration was successful.
-      * As a site user I can have a peronalized user profile so that I can view my perosnal order history and order confirmations and save my perosnal information.
-      * As a site user I can search for products by name or description so that I can find the best rated products in a specific category.
-      * As a site user I can sort multiple categories of products simultaneously so that I can find the best rated across broad categories.
-      * As a site user I can view list of products so that I can select the one to purchase
-      * As a site user I can look at product details so that I can view the price and other product details.
-      * As a site user I can view the contents of my shopping bag so that I can be able to make any adjustments.
-      * As a site user I can view the total of my purchase so that I can avoid spendingg too much.
-      * As a site user I can update my bag by adding more or remove products so that I can decide on the number of products I intend to buy
-      * As a site user I can identify deals and clearance so that I can take advantage of special savings on products.
-      * As a site user I can view my order summary so that I can verify it before confirming
-      * As a site user I can easily select the quantity of a product so that I can ensure I select the right quantity.
-      * As a site user I can checkout securely so that I can I maintain the level of trust on the site
-      * As a site user I can view paginated posts so that I can select which posts to view
-      * As a site user I can view all posts so that I can decide what I may be interested in reading
-      * As a site user I can comment to the blog posts so that I can express my opinion to the post
-      * As a site user I can use the contact form so that I can contact the site owners
-      * As a site user I can sign up to newsletter so that I can keep updated on the latest news
+      * As a site user I can easily register an  account
+          so that I can have a personal account
+      * As a site user I can login in my account
+          so that I can view my order history
+      * As a site user I can easily login and logout 
+         so that I can I can access my personal information.
+      * As a site user I can easily recover my password 
+         if I forget so that I can recover access to my account.
+      * As a site user I can receive an email confirmation 
+         after registering so that I can verify that my account registration was successful.
+      * As a site user I can have a peronalized user profile 
+         so that I can view my perosnal order history and 
+            order confirmations and save my perosnal information.
+      * As a site user I can search for products by name or 
+         description so that I can find the best rated products in a specific category.
+      * As a site user I can sort multiple categories of products 
+         simultaneously so that I can find the best rated across broad categories.
+      * As a site user I can view list of products 
+         so that I can select the one to purchase
+      * As a site user I can look at product details so
+          that I can view the price and other product details.
+      * As a site user I can view the contents of my 
+         shopping bag so that I can be able to make any adjustments.
+      * As a site user I can view the total of my purchase 
+         so that I can avoid spendingg too much.
+      * As a site user I can update my bag by adding more or 
+         remove products so that I can decide on the number of products I intend to buy
+      * As a site user I can identify deals and clearance 
+         so that I can take advantage of special savings on products.
+      * As a site user I can view my order summary 
+         so that I can verify it before confirming
+      * As a site user I can easily select the quantity of a product
+          so that I can ensure I select the right quantity.
+      * As a site user I can checkout securely so 
+         that I can I maintain the level of trust on the site
+      * As a site user I can view paginated posts 
+         so that I can select which posts to view
+      * As a site user I can view all posts so that I can 
+         decide what I may be interested in reading
+      * As a site user I can comment to the blog posts so
+          that I can express my opinion to the post
+      * As a site user I can use the contact form
+          so that I can contact the site owners
+      * As a site user I can sign up to newsletter 
+         so that I can keep updated on the latest news
 
 
 * ### Database
@@ -388,13 +416,16 @@ A 404 page is also available to handle navigation errors with a home link button
 
 ## User story testing
 ### Admin
-* As a admin I can manage users' accounts so that I can make any required changes to them if needed
+* As a admin I can manage users' accounts so that
+    I can make any required changes to them if needed
    > Admin can manage user accounts from admin panels
-* As a admin I can manage products so that I can add , update or delete products when necessary
+* As a admin I can manage products so that I can add ,
+    update or delete products when necessary
    > Admin can add, delete and update products on the site
 * As a admin I can view created orders so that I can full fill the orders or amend if needed
    > Admin can view orders in admin panel
-* As a Admin I can delete any of comments so that I can remove them if I nolonger feel they are still necessary or needed
+* As a Admin I can delete any of comments so that
+    I can remove them if I nolonger feel they are still necessary or needed
    > Only admin can delete comments 
 * As a Admin I can view messages sent via contact form so that I can act upon them
    > Admin can view send messages in the admin panel
@@ -409,18 +440,23 @@ A 404 page is also available to handle navigation errors with a home link button
    > Logged in user can view order history if they made a purchase before
 * As a site user I can search for products so that I can find specific products
    > I made sure users can search for what they want using search bar
-* As a site user I can sort products on criteria such as price and category so that I can I have a method of ordering the products
-   > I made products to be filtered by price or category for users to choose how they want to view
-products as I prefer
-* As a site user I can browse through products so that I can decide what I may be interested in buying
+* As a site user I can sort products on criteria
+ such as price and category so that I can I have a method of ordering the products
+   > I made products to be filtered by 
+   price or category for users to choose how they want to view products as I prefer
+* As a site user I can browse through products 
+so that I can decide what I may be interested in buying
    > I made the site such that its easy to browse through all products so they see what to order
 * As a site user I can look at product details so that I can decide if I want to purchase it
    > Each product has a  detailed description so users understands more of it
-* As a site user I can easily add products I want to purchase to a basket so that I can decide whether to purchase or not
+* As a site user I can easily add products 
+I want to purchase to a basket so that I can decide whether to purchase or not
    > Users can easily add products to bag
-* As a site user I can view the contents of my shopping basket so that I can be able to make any adjustments
+* As a site user I can view the contents of my shopping basket 
+   so that I can be able to make any adjustments
    > User can view bag contents by clicking the bag itself
-* As a site user I can update my bag by adding more or remove products so that I can decide on the number of products I intend to buy
+* As a site user I can update my bag by adding more or remove products 
+   so that I can decide on the number of products I intend to buy
    > User can update the bag to a quantity they want or remove everything entirely
 * As a site user I can view my order summary so that I can verify it before confirming
    > From secure checkout, users can verify their order summary before buying
@@ -444,80 +480,6 @@ Throughout developing this site, I have been using Chrome, and chrome dev tools 
 ## Compatibility testing
 
 Chrome emulated devices, and hardware devices iphone 13, samsung A51 and samsung tablet E were used to test compatibility
-
-## Wave testing
-
-I also tested this site on [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) is a set of evaluation tools which helps authors to make their web content more accessible to individuals with disabilities. WAVE can identify many accessibility and Web Content Accessibility Guideline (WCAG) errors, but also facilitates human evaluation of web content as per definition on their site.
-
-<details>
-  <summary>Home</summary>
-
-  ![](static/images/WebHome.jpg)
-
-  I went on to fix the error by adding the aria label to the seach box input
-
-</details> 
-
-<details>
-<summary>Bag</summary>
-
-![](static/images/web_bag.jpg)
-
-</details> 
-
-<details>
-<summary>Privacy policy</summary>
-
-![](static/images/webprivacy_policy.jpg)
-
-</details> 
-
-<details>
-  <summary>Contact us</summary>
-
-  ![](static/images/web_contact.jpg)
-
-  changed the level heading. Skipped the labels part as I had no intention to use labels on this page
-
-</details> 
-
-<details>
-  <summary>Blog detail</summary>
-
-![](static/images/webblog_detail.jpg)
-
-</details> 
-
-<details>
-  <summary>Blog</summary>
-
-![](static/images/web_blog.jpg)
-
-</details> 
-
-<details>
-  
-<summary>All specials</summary>
-
-![](static/images/weball_specials.jpg)
-
-  I added heading to price from paragraph tag. Skipped the labels part as I had no intention to use one
-
-</details>
-
-<details>
-  
-<summary>Products</summary>
-
-![](static/images/weball_products.jpg)
-Fixed the alerts by adding specified headings both to newsletter and product price
-
-</details> 
-
-<details>
-
-
-</details> 
 
 ##  HTML TEST
  <details>
@@ -546,24 +508,6 @@ Mobile
   ![css_test](static/images/jigsaw_css.png)
 
   </details> 
-
-
-## Javascript validation
-I used JSlint to validate javascript found in some apps
-
-* bag app - semi colon warning
-
-* blog app -  semi colon warnings
-
-* base.html - zero warnings
-
-* newsletter - 8 warnings but the code is directly from mailchimp
-
-* checkout - semi colon warnings
-
-* products - semi colon warnings
-
-* profiles - no warnings
 
 ### Python
 [ CI Python linter ](https://pep8ci.herokuapp.com/) was used to test python code
