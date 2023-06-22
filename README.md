@@ -116,13 +116,15 @@
 
 
 * ### Database
-      I created a a sketch of the database diagram. Due to the site's free plan, I can only create 15 tables.
+      I created a a sketch of the database diagram.
+       Due to the site's free plan, I can only create 15 tables.
    
  Link to database diagram can be found [Here](https://drawsql.app/teams/gbemisola-ajebeku/diagrams/ebin)
 
 
 * ### Design
-      Before I wrote any code for this site, I had to pin point a simple design of what I wanted my site to look like by using wireframes.
+      Before I wrote any code for this site, I had to pin point a simple design of
+       what I wanted my site to look like by using wireframes.
 <details>
 <summary>Click here to view Wireframes:</summary>
 
@@ -143,11 +145,15 @@
 
 * ### E-commerce type
 
-      EbinNaturals is an e-commerce B2C online retail store that sells directly to customers. The functionality on this site for a customer is the ability to make purchases swiflty and efficiently. For the owners, the goal is to archieve CRUD products and other functionalities.
+      EbinNaturals is an e-commerce B2C online retail store that sells directly to customers. 
+      The functionality on this site for a customer is the ability to make purchases swiflty and efficiently. 
+      For the owners, the goal is to archieve CRUD products and other functionalities.
 
 
 * ### Marketing
-      Though there are a lot of marketing techniques for businesses, EbiinNaturals decided to first use the cheaper way, that is facebook to drive its' content and engage with customers.
+      Though there are a lot of marketing techniques for businesses, 
+      EbiinNaturals decided to first use the cheaper way, 
+      that is facebook to drive its' content and engage with customers.
    Visit our facebook page [Here](https://www.facebook.com/EbinNaturals/)
 
 
@@ -156,7 +162,12 @@
 
 * ### Home Page
 
-     The website is designed to be welcoming and easy to use. It features a nav bar and nav links. It starts with the name of the website on the top left, search field in the midddle, my account and shopping bag to the right, followed by a navigation menu links,free shipping threshold text and footer. All these appear on every page on the site. Also found on home page is  a hero image accompanied by a hero text, and a shop now button beneath it.
+     The website is designed to be welcoming and easy to use. 
+     It features a nav bar and nav links. It starts with the name of the website on the top left,
+     search field in the midddle, my account and shopping bag to the right, 
+     followed by a navigation menu links,free shipping threshold text and footer. 
+     All these appear on every page on the site. Also,  found on home page is  a hero
+      image accompanied by a hero text, and a shop now button beneath it.
 
 ![home](static/images/welcome_page.png)
 
@@ -167,7 +178,7 @@
 
 
 * ### Shop Now
-      This takes the user to the list of all products.
+      This call to action button takes the user to the list of all products.
 ![shopnow](static/images/shop_now.png)
 
 
@@ -183,7 +194,12 @@
 
 * ### Product detail and add to bag
 
-      Each product on site has a detailed information in form of a name, price,image, description and its category. The user is displayed with a quantity input box to select the quantity they need to add to the shopping bag either increasing or decreasing. They have an option to go back to products by clicking the keep shopping button.  Each time a user add a product to the bag they get a popup notification that alerts them of that action.
+      Each product on site has a detailed information in form of a name,
+       price,image, description and its category. 
+      The user is displayed with a quantity input box to select the quantity they n
+      need to add to the shopping bag either increasing or decreasing. 
+      They have an option to go back to products by clicking the keep shopping button. 
+       Each time a user add a product to the bag they get a popup notification that alerts them of that action.
 
    ![detail](static/images/product_detail.png)
    ![bagmessage](static/images/bag_screenshot.png)
@@ -191,17 +207,23 @@
 
 * ### The shopping bag
 
-      Consists of the price, quantity of each item and sub total. The User have an option to update their bag or remove some items from bag. They can easily go back to products by clicking keep shopping or go to checkout.
+      Consists of the price, quantity of each item and sub total. 
+      The User have an option to update their bag or remove some items from bag. 
+      They can easily go back to products by clicking keep shopping or go to checkout.
 
    ![bag](static/images/shop_bag.png)
 
 * ### Checkout
 
-      On the left side of the checkout is where user puts their information, and on the right side is a summary of their order that is the total, the delivery.
+      On the left side of the checkout is where user puts their information,
+       and on the right side is a summary of their order that is the total, the delivery.
 
    ![checkout](static/images/checkout-bag.png)
 
-      User have the option to save their information to a profile. Users will need to input the card number for payment. They still have an option to adjust the bag at this point by clicking the adjust bag, or then completing the order.
+      User have the option to save their information to a profile. 
+      Users will need to input the card number for payment. 
+      They still have an option to adjust the bag at this point 
+      by clicking the adjust bag, or then completing the order.
 
    ![checkout bottom](static/images/checkout_bottom.png)
 
@@ -213,12 +235,18 @@
    ![order confirm](static/images/order_confirm.jpg)
 
 * ### Register/Sign up
-      On the right side of the home page, for the first time user they will need to register their account to enjoy most of the site benefits such as saving their orders, commenting on blogs. When registering users are asked their username, email and password
+      On the right side of the home page, for the first time user
+       they will need to register their account to enjoy most of the site
+        benefits such as saving their orders, commenting on blogs. 
+        When registering users are asked their username, email and password
 ![register](static/images/register.jpg)
 
 * ### Sign in
 
-      Registered users would need to sign in when they visit the site again. They will be asked to enter their username and password. The Remember me option is also available making life easier for returning users. Is users need to reset their password, a forgot password is also available.
+      Registered users would need to sign in when they visit the site again. 
+      They will be asked to enter their username and password. 
+      The Remember me option is also available making life easier for returning users. 
+      It's users need to reset their password, a forgot password is also available.
 
    ![login](static/images/login.jpg)
 
@@ -233,13 +261,15 @@
 
 * ### Footer
 
-      The footer appears on all pages of the site, it contains the newsletter sign up, about us, privacy policy, facebook and instagram
+      The footer appears on all pages of the site, 
+      it contains the newsletter sign up, about us, privacy policy and social media links.
 
 ![footer](static/images/footer.jpg)
 
 * ### Newsletter
 
-Users can subscribe via their email to receive news, offers and deals straight into their inbox.
+Users can subscribe via their email to receive news, 
+offers and deals straight into their inbox.
 ![newsletter](static/images/newsletter_signup.png)
 
 
@@ -249,19 +279,22 @@ Users can subscribe via their email to receive news, offers and deals straight i
 
 * ### Facebook
 
-      In terms of marketing, the website has a business facebook page to advertise it's products and services.
+      In terms of marketing, the website has a business 
+      facebook page to advertise it's products and services.
    ![facebook](static/images/facebook_img.png)
 
 * ### Blog
 
-      Users can view all the blog articles and select which one to read by clicking the image
+      Users can view all the blog articles and select 
+      which one to read by clicking the image
    ![blog](static/images/blogpost.png)
 
 * ### Blog detail
 
    ![blog detail](static/images/blog_detail.jpg)
 
-   Only logged in users are permitted to comment on articles in as much as they can read other comments written by other users
+   Only logged in users are permitted to comment on
+    articles in as much as they can read other comments written by other users
 
 ![comments](static/images/comments.jpg)
 
@@ -273,7 +306,8 @@ After logging in they can leave a comment on any blog article
 
 * ### Add blog
 
-      Super users are the creators of the blog articles. To add a new blog they have to put title, slug, body and image and then save.
+      Super users are the creators of the blog articles.
+       To add a new blog they have to put title, slug, body and image and then save.
 
 ![add blog](static/images/add_blog.png)
 
@@ -294,7 +328,8 @@ Super users have the ability to delete comments that seem inappropriate
 
 # Contact us
 
-A contact us page is available for users who need to get in touch with the store owners. They have to put their name, email, the topic and the overall message before sending.
+A contact us page is available for users who need to get in touch with the store owners. 
+They have to put their name, email, the topic and the overall message before sending.
 ![contact](static/images/facebook_img.png)
 
 # My Profile
@@ -304,7 +339,8 @@ The my profile page displays a user's saved contact infomation and their order h
 
 # 404 page
 
-A 404 page is also available to handle navigation errors with a home link button to take them back to the home page.
+A 404 page is also available to handle navigation errors with a
+ home link button to take them back to the home page.
 ![error handling](static/images/facebook_img.png)
 
 ### Future features
@@ -317,7 +353,9 @@ A 404 page is also available to handle navigation errors with a home link button
 
 * ### Email marketing
 
-      The free version of mailchimp was chosen with the current status of the business. Each user that signs up is added to the weekly newsletter and they might turn out to be future customers henceforth low cost to drive sales.
+      The free version of mailchimp was chosen with the current status of the business.
+    Each user that signs up is added to the weekly newsletter and they might 
+    turn out to be future customers henceforth low cost to drive sales.
 
 * ### Search engine optimization
 
@@ -327,7 +365,10 @@ A 404 page is also available to handle navigation errors with a home link button
 
 * ### Social media marketing
 
-      A facebook page was created to build community from the target market. Facebook is free and it also takes little to no time to set up and also it has so many users whom a business can strive to maintain a certain relationship, create content and connect with a target audience.
+      A facebook page was created to build community from the target market. 
+      Facebook is free and it also takes little to no time to set up.
+      also, it has so many users whom a business can strive to maintain a certain relationship,
+       create content and connect with a target audience.
 
    ![facebook](static/images/facebook_img.png)
 
@@ -344,7 +385,8 @@ A 404 page is also available to handle navigation errors with a home link button
 
 ### Frameworks, programs and libraries used
 
-* [Django](https://www.djangoproject.com/) - Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.
+* [Django](https://www.djangoproject.com/) - Django is a high-level Python web framework that 
+   encourages rapid development and clean, pragmatic design.
 
 * [Bootstrap4](https://getbootstrap.com/) - A css framework
 
