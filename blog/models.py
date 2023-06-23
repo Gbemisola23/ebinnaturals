@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-# from django.utils.timezone import now
+from django.utils import timezone
 
 
 class Post(models.Model):
@@ -14,14 +14,16 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+
 class Comment(models.Model):
-    post = models.ForeignKey(Post, on_delete=models.CASCADE,
-                             related_name="comments")
-    content = models.TextField()
-    name = models.CharField(max_length=80)
-    email = models.EmailField()
-    pub_date = models.DateTimeField(auto_now_add=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, default=1, on_delete=models.CASCADE)
+    body = models.TextField()
+    created_on = models.DateTimeField(default=timezone.now)
+    approved = models.BooleanField(default=False)
+
+
+    class Meta:
+        ordering = ["created_on"]
 
     def __str__(self):
-        return f"Comment by {self.author.username} on {self.post.title}"
+        return self.user.username + " Comment: " + self.body
