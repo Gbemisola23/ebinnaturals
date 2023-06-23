@@ -427,11 +427,10 @@ A 404 page is also available to handle navigation errors with a
 | Shop Now button  | Selecting Shop Now button |  directs user to all  products page |  Pass |
 | Adjust quantity | Plus or minus button |  adjust the quantity of product |  Pass |
 | Add to bag | Adding to bag | successfully add products to bag| Pass |
-| Kep Shopping | Keep shopping button |  directs user back to all products page  |  Pass |
+| Keep Shopping | Keep shopping button |  directs user back to all products page  |  Pass |
 | Delete from bag | deleting products from bag | successfully delete products from bag| Pass |
 | Shopping bag  | Shows the added products and total |  directs user to checkout page |  Pass |
 | Secure Checkout button  | Using the secure checkout button |  directs user to checkout form and payment details |  Pass |
-| About Us | Selecting About Us |  directs user to About Us page |  Pass |
 | Sign up for our newsletter | selecting Sign up for our newsletter |  directs user Sign up for our newsletter page |  Pass |
 | Privacy policy | Selecting privacy policy |  directs user to privacy policy|  Pass |
 | facebook icon | Selecting  facebook icon |  directs user to facebook page |  Pass |
