@@ -66,6 +66,8 @@
       * As admin I can view messages sent via contact form so that I can act upon them
       * As admin I can manage the blog content so 
          that I can make amendments if needed
+      * As admin I can manage the business social media 
+         profiles so that i can advertise my business.
 
 * ### As a site user
       * As a site user I can easily register an  account
@@ -83,34 +85,35 @@
             order confirmations and save my perosnal information.
       * As a site user I can search for products by name or 
          description so that I can find the best rated products in a specific category.
-      * As a site user I can sort multiple categories of products 
-         simultaneously so that I can find the best rated across broad categories.
-      * As a site user I can view list of products 
+      * As a site user I can sort multiple categories of       
+        products simultaneously so that I can find the best rated across broad categories.
+      * As a shopper I can view list of products 
          so that I can select the one to purchase
-      * As a site user I can look at product details so
+      * As a shopper I can look at product details so
           that I can view the price and other product details.
       * As a site user I can view the contents of my 
          shopping bag so that I can be able to make any adjustments.
       * As a site user I can view the total of my purchase 
-         so that I can avoid spendingg too much.
+         so that I can avoid spending too much.
       * As a site user I can update my bag by adding more or 
-         remove products so that I can decide on the number of products I intend to buy
+         remove products so that I can decide on the number of products I intend to buy.
       * As a site user I can identify deals and clearance 
          so that I can take advantage of special savings on products.
       * As a site user I can view my order summary 
          so that I can verify it before confirming
-      * As a site user I can easily select the quantity of a product
-          so that I can ensure I select the right quantity.
+      * As a site user I can easily select the quantity of a product so that I can ensure I select the right quantity.
       * As a site user I can checkout securely so 
          that I can I maintain the level of trust on the site
-      * As a site user I can view paginated posts 
-         so that I can select which posts to view
+      * As a site user I can view blog posts
+         so that I can select which posts to view.
       * As a site user I can view all posts so that I can 
-         decide what I may be interested in reading
+         decide what I may be interested in reading.
       * As a site user I can comment to the blog posts so
-          that I can express my opinion to the post
+          that I can express my opinion to the post.
       * As a site user I can use the contact form
-          so that I can contact the site owners
+          so that I can contact the site owners.
+      * As a site user/shopper I can contact the business 
+         through their social media profiles.
       * As a site user I can sign up to newsletter 
          so that I can keep updated on the latest news
 

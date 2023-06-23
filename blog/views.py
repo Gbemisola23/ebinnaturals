@@ -38,6 +38,7 @@ def post_detail(request, slug):
     return render(request, template, context)
 
 
+
 @login_required
 def delete_comment(request, comment_id):
     """
