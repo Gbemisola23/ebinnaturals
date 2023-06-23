@@ -329,6 +329,7 @@ After logging in they can leave a comment on any blog article
 Super users have the ability to delete comments that seem inappropriate
 ![delete comment](static/images/delete_comment.jpg)
 
+
 # Contact us
 
 A contact us page is available for users who need to get in touch with the store owners. 
@@ -560,23 +561,26 @@ Mobile
 
    For this project there were so many major bugs I encountered during the project development. 
    Some of them I ended up taking them to tutor support whom have been very helpful. 
-   Also, my dear husband who is also a developer who helped me to resolve issues that tutor support couldn't help with.
+   Also, my dear husband who is also a developer who helped me to resolve issues 
+   that tutor support couldn't help with.
 
 ### Bug 1
-Toasts not showing/displaying - Having all the code set up properly and checking in chrome dev tools I could see they were rendering in my template however not displaying. To fix this (from tutor support), There is a script in base.html to show any toasts in postloadjs and in the template I wanted them to show up I had a {% block postloadjs %} without {{ block.super }} in it. This resulted in the block from base.html being overwritten by a blank block. Removing the blank block in the detail template fixed it.
+During development, product detail wasn't displaying beacause of erroneous template.
+Tutor support helped me in locating the erroneous template which was spelt wrongly.
+
+![Bug1](static/images/Productdetail_bug.png)
 
 ### Bug 2
 
-In testing my search box and product management - error handling was not working each time I was testing the search box and product management whereby the error toast was rendering but not display , also the header would just disappear. The fix was simple though it took me hours, I searched via Code Institute slack and found out someone made my mistake as well of missing out a closing div tag in toast error.
+While trying to copy recursively some templates I realized the command wasn't working,
+tutor support guided me in fixing it by giving me the right command.
 
-![](static/images/bug2.jpg)
+![](static/images/Productdetail_bug.png)
  
-![](static/images/bug3.jpg)
  
 ### Bug 3
 
-I had errors in validating html and to resolve them I had to put ul tags in mobile header which led to the bug below. To fix this I added padding to icons(search, my account, bag)
-
+I had problem disabling collect_static 
 ![](static/images/bug4.jpg)
 
 ### Bug 4
@@ -589,15 +593,7 @@ Solution: In checkout views.py in the checkout function, 2 following lines of co
 
 ![](static/images/solution.jpg)
 
-### Bug 5
 
-Contact form resubmission on page refresh. To fix this according to [the solution from stack overflow](https://stackoverflow.com/questions/5823580/django-form-resubmitted-upon-refresh)
-I needed to use a return HttpResponseRedirect,which I added to my view after the form is submitted.
-
-### Bug 6
-Anonymous user not iterable error whereby users not logged in could receive error when checking out, they would not receive a payment confirmation yet the order would have been created behind the scenes. To fix- In checkout success function in views.py I added an if statement to check if user is aunthenticated:(  if request.user.is_authenticated) and attach the profile to user.
-
-![](static/images/Screenshot_12.jpg)
 
 # Deployment
 
