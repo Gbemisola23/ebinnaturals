@@ -17,7 +17,7 @@ def post_detail(request, slug):
     """ View to show a particular blog post in detail """
 
     post = Post.objects.filter(slug=slug).first()
-    comments = Comment.objects.filter(post_id=post)
+    # comment = Comment.objects.filter(post_id=post)
 
     if request.method == 'POST':
         if not request.user.is_authenticated:
@@ -26,13 +26,13 @@ def post_detail(request, slug):
         else:
             user = request.user
             content = request.POST.get('content', '')
-            comment = Comment(user=user, body=body, post_id=post)
-            comment.save()
+            # comment = Comment(user=user, body=body, post_id=post)
+            # comment.save()
 
     template = 'blog/post_detail.html'
     context = {
         'post': post,
-        'comments': comments,
+        # 'comment': comment,
     }
 
     return render(request, template, context)

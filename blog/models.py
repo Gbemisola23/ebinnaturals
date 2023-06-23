@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.utils import timezone
 
 
 class Post(models.Model):
@@ -18,7 +17,8 @@ class Post(models.Model):
 class Comment(models.Model):
     user = models.ForeignKey(User, default=1, on_delete=models.CASCADE)
     body = models.TextField()
-    created_on = models.DateTimeField(default=timezone.now)
+    post_id = models.IntegerField(null=True, blank=True)
+    created_on = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
 
 
