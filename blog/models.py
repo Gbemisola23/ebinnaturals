@@ -17,7 +17,7 @@ class Post(models.Model):
 class Comment(models.Model):
     user = models.ForeignKey(User, default=1, on_delete=models.CASCADE)
     body = models.TextField()
-    post_id = models.IntegerField(null=True, blank=True)
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="comments")
     created_on = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
 

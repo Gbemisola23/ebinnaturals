@@ -1,9 +1,10 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.views.generic import ListView
+from django.views.decorators.http import require_POST
 from . import views
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .forms import PostForm, AddPostForm
+from .forms import PostForm, AddPostForm, CommentForm
 from .models import Post, Comment
 
 
@@ -12,32 +13,53 @@ class PostList(ListView):
     model = Post
     template_name = 'blog/blog.html'
 
-
-def post_detail(request, slug):
+def post_detail(request, slug, commented=False, commentForm=None):
     """ View to show a particular blog post in detail """
-
-    post = Post.objects.filter(slug=slug).first()
-    # comment = Comment.objects.filter(post_id=post)
-
-    if request.method == 'POST':
-        if not request.user.is_authenticated:
-            messages.error(request, 'Action not allowed')
-            return redirect(reverse('home'))
-        else:
-            user = request.user
-            content = request.POST.get('content', '')
-            # comment = Comment(user=user, body=body, post_id=post)
-            # comment.save()
+    queryset = Post.objects
+    post = get_object_or_404(queryset, slug=slug)
+    comments = post.comments.filter(approved=True).order_by("-created_on")
 
     template = 'blog/post_detail.html'
     context = {
         'post': post,
-        # 'comment': comment,
+        'comments': comments,
+        'commented': commented,
+        'comment_form': commentForm
     }
 
     return render(request, template, context)
+    
+@login_required
+@require_POST
+def add_comment(request, slug):
+    """ View to show a particular blog post in detail """
+    queryset = Post.objects
+    post = get_object_or_404(queryset, slug=slug)
 
+    comment_form = CommentForm(data=request.POST)
+    if comment_form.is_valid():
+        comment_form.instance.user = request.user
+        comment_form.instance.name = request.user.username
+        comment = comment_form.save(commit=False)
+        comment.post = post
+        comment.save()
+        commented = True
 
+    return post_detail(request, slug, True)
+
+@login_required
+def edit_comment(request, slug, commentId):
+    """ View to show a particular blog post in detail """
+    queryset = Post.objects
+    post = get_object_or_404(queryset, slug=slug)
+    comment = post.comments.filter(approved=True, id=commentId)
+
+    if comment:
+        commentForm = CommentForm(instance=comment)
+    else:
+        commentForm = None
+
+    return post_detail(request, slug, commentForm=commentForm)
 
 @login_required
 def delete_comment(request, comment_id):

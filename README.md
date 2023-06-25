@@ -345,7 +345,7 @@ The my profile page displays a user's saved contact infomation and their order h
 
 A 404 page is also available to handle navigation errors with a
  home link button to take them back to the home page.
-![error handling](static/images/facebook_img.png)
+![error handling]()
 
 ### Future features
 
@@ -565,15 +565,16 @@ Mobile
    that tutor support couldn't help with.
 
 ### Bug 1
-During development, product detail wasn't displaying beacause of erroneous template.
-Tutor support helped me in locating the erroneous template which was spelt wrongly.
+   1.During development, product detail wasn't displaying beacause of erroneous template.
+   Tutor support helped me in locating the erroneous template which was spelt wrongly.
 
 ![Bug1](static/images/Productdetail_bug.png)
 
 ### Bug 2
 
+2. 
 While trying to copy recursively some templates I realized the command wasn't working,
-tutor support guided me in fixing it by giving me the right command.
+   tutor support guided me in fixing it by giving me the right command.
 
 ![](static/images/Productdetail_bug.png)
  
@@ -719,9 +720,9 @@ Pauline Rugwevera project and MikeR94 Readme.
 1. I had this error "TypeError: __init__() got an unexpected keyword argument 'providing_args'" while trying to migrate the allauth app.
 I uninstalled django and reinstalled it, thereafter running python3 manage.py migrate which worked successfully.
 
-2. I had this error "cp: cannot stat '../.pip-modules/lib/python3.7/site-packages/allauth/templates/*': No such file or directory" while trying to copy the templates recursively.
+
 Tutor support guided me in finding the django-allauth directory.
-3.While I wwas in the process of connecting django to S3 bucket I encountered the issue of heroku configset:DISABLE_COLLECTSTATIC which prevented a successful deployment from django. After several attempts I manually created a static file in the root directory and I manually uploaded in the S3 website.
+3.While I was in the process of connecting django to S3 bucket I encountered the issue of heroku configset:DISABLE_COLLECTSTATIC which prevented a successful deployment from django. After several attempts I manually created a static file in the root directory and I manually uploaded in the S3 website.
 
 Images
 Homepage banner image by Silvia from pixabay
