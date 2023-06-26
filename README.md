@@ -235,14 +235,12 @@
 <!-- * ### Checkout success -->
 
       After completing an order, users receive an order confirmation with their details including order number.
-   ![order confirm](static/images/order_confirm.jpg)
 
 * ### Register/Sign up
       On the right side of the home page, for the first time user
        they will need to register their account to enjoy most of the site
         benefits such as saving their orders, commenting on blogs. 
         When registering users are asked their username, email and password
-![register](static/images/register.jpg)
 
 * ### Sign in
 
@@ -251,15 +249,12 @@
       The Remember me option is also available making life easier for returning users. 
       It's users need to reset their password, a forgot password is also available.
 
-   ![login](static/images/login.jpg)
 
 * ### Logout
       Users are able to protect their account by logging out of the site.
 
 
 * ### Order confirmation email
-
-   ![confirmation email](static/images/email.jpg)
 
 
 * ### Footer
@@ -280,30 +275,19 @@ offers and deals straight into their inbox.
 
 ![privacy policy](static/images/privacy_policy.png)
 
-* ### Facebook
-
-      In terms of marketing, the website has a business 
-      facebook page to advertise it's products and services.
-   ![facebook](static/images/facebook_img.png)
 
 * ### Blog
 
       Users can view all the blog articles and select 
       which one to read by clicking the image
-   ![blog](static/images/blogpost.png)
+    ![blog](static/images/blogpost.png)
 
 * ### Blog detail
-
-   ![blog detail](static/images/blog_detail.jpg)
 
    Only logged in users are permitted to comment on
     articles in as much as they can read other comments written by other users
 
-![comments](static/images/comments.jpg)
-
-After logging in they can leave a comment on any blog article
-
-![comment](static/images/comment.jpg)
+   After logging in they can leave a comment on any blog article
 
 ### Blog management
 
@@ -324,28 +308,35 @@ After logging in they can leave a comment on any blog article
       If the post is no longer serving its purposes, super users can also delete it
 ![delete blog](static/images/deletepost.jpg)
 
-## Delete comment
+## Add comment
 
-Super users have the ability to delete comments that seem inappropriate
-![delete comment](static/images/delete_comment.jpg)
+Logged-in Users/Superusers have the ability to add comments.
+
+## Edit comment
+
+Superusers/Logged-in Users/ have the ability to edit comments.
+
+## Delete comment
+Superusers/Logged-in Users have the ability to delete comments.
 
 
 # Contact us
 
 A contact us page is available for users who need to get in touch with the store owners. 
 They have to put their name, email, the topic and the overall message before sending.
-![contact](static/images/facebook_img.png)
+![contact](static/images/contact_form.png)
 
-# My Profile
+## My Profile
 
-The my profile page displays a user's saved contact infomation and their order history.
-![profile](static/images/profile.jpg)
+  The my profile page displays a user's saved 
+   contact infomation and their order history.
+
 
 # 404 page
 
-A 404 page is also available to handle navigation errors with a
+ A 404 page is also available to handle navigation errors with a
  home link button to take them back to the home page.
-![error handling]()
+![error handling](static/images/404.png)
 
 ### Future features
 
@@ -364,8 +355,6 @@ A 404 page is also available to handle navigation errors with a
 * ### Search engine optimization
 
       SEO keywords
-
-![seo](static/images/seo.jpg)
 
 * ### Social media marketing
 

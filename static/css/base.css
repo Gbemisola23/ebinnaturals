@@ -191,38 +191,19 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-/*-- Footer--*/
+
+  
 .newsletter {
     font-size: 19px;
     font-family: 'Lato', sans-serif;
 }
 
-.newsletter,
-.about,
-.footer-button,
-.privacy-policy {
-    color: #000;
-}
 
 .newsletter:hover,
-.about:hover,
 .privacy-policy:hover {
     color: #000;
 }
 
-#mc_embed_signup {
-    background: #fff;
-    clear: left;
-    font: 14px;
-    width: 600px;
-
-}
-
-.social-networks i {
-    font-size: 160%;
-    padding: 5px;
-    color: #000;
-}
 
 .social-networks i:hover {
     color: #000;

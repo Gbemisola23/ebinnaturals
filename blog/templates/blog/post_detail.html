@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load crispy_forms_tags %}
 
 {% block extra_title %} Post Detail {% endblock %}
 
@@ -69,10 +70,10 @@
                 {% csrf_token %}
                 <div class="form-floating">
                     {{ comment_form | crispy }}
-                    <textarea class="form-control" required placeholder="Leave a comment here" id="floatingTextarea2"
+                    <!-- <textarea class="form-control" required placeholder="Leave a comment here" id="floatingTextarea2"
                         style="height: 100px" id="body" name="body"></textarea>
                     <label for="floatingTextarea2">Leave a comment here.</label>
-                    <br>
+                    <br> -->
                     <button type="submit" class="btn btn-black rounded-0">Submit</button>
                 </div>
             </form>

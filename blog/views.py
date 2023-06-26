@@ -13,7 +13,7 @@ class PostList(ListView):
     model = Post
     template_name = 'blog/blog.html'
 
-def post_detail(request, slug, commented=False, commentForm=None):
+def post_detail(request, slug, commented=False, commentForm=CommentForm()):
     """ View to show a particular blog post in detail """
     queryset = Post.objects
     post = get_object_or_404(queryset, slug=slug)
@@ -52,7 +52,7 @@ def edit_comment(request, slug, commentId):
     """ View to show a particular blog post in detail """
     queryset = Post.objects
     post = get_object_or_404(queryset, slug=slug)
-    comment = post.comments.filter(approved=True, id=commentId)
+    comment = post.comments.filter(approved=True, id=commentId).first()
 
     if comment:
         commentForm = CommentForm(instance=comment)
@@ -62,7 +62,7 @@ def edit_comment(request, slug, commentId):
     return post_detail(request, slug, commentForm=commentForm)
 
 @login_required
-def delete_comment(request, comment_id):
+def delete_comment(request, slug, commentId):
     """
     A view to delete comments by admin
     """
@@ -72,10 +72,11 @@ def delete_comment(request, comment_id):
         return redirect(
             reverse('blog'))
 
-    comment = get_object_or_404(Comment, pk=comment_id)
+    comment = get_object_or_404(Comment, pk=commentId)
     comment.delete()
     messages.success(request, 'The comment was removed!')
-    return redirect(reverse('blog'))
+    
+    return redirect(reverse('post_detail', args=[slug]))
 
 
 @login_required
