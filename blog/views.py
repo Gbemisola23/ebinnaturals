@@ -13,56 +13,51 @@ class PostList(ListView):
     model = Post
     template_name = 'blog/blog.html'
 
-def post_detail(request, slug, commented=False, commentForm=CommentForm()):
+def post_detail(request, slug, commented=False, comment_form=CommentForm()):
     """ View to show a particular blog post in detail """
     queryset = Post.objects
     post = get_object_or_404(queryset, slug=slug)
     comments = post.comments.filter(approved=True).order_by("-created_on")
+
+    if request.method == "POST":
+        comment_form = CommentForm(data=request.POST)
+        if comment_form.is_valid():
+            comment = comment_form.save(commit=False)
+            comment.user = request.user
+            comment.post = post
+            comment.save()
+            commented = True
 
     template = 'blog/post_detail.html'
     context = {
         'post': post,
         'comments': comments,
         'commented': commented,
-        'comment_form': commentForm
+        'comment_form': comment_form
     }
 
     return render(request, template, context)
-    
-@login_required
-@require_POST
-def add_comment(request, slug):
-    """ View to show a particular blog post in detail """
-    queryset = Post.objects
-    post = get_object_or_404(queryset, slug=slug)
-
-    comment_form = CommentForm(data=request.POST)
-    if comment_form.is_valid():
-        comment_form.instance.user = request.user
-        comment_form.instance.name = request.user.username
-        comment = comment_form.save(commit=False)
-        comment.post = post
-        comment.save()
-        commented = True
-
-    return post_detail(request, slug, True)
 
 @login_required
-def edit_comment(request, slug, commentId):
-    """ View to show a particular blog post in detail """
+def edit_comment(request, slug, comment_id):
+    """ View to edit a particular comment """
     queryset = Post.objects
     post = get_object_or_404(queryset, slug=slug)
-    comment = post.comments.filter(approved=True, id=commentId).first()
+    comment = get_object_or_404(post.comments, user=request.user, id=comment_id)
 
-    if comment:
-        commentForm = CommentForm(instance=comment)
+    if request.method == 'POST':
+        comment_form = CommentForm(request.POST, request.FILES, instance=comment)
+        if comment_form.is_valid():
+            comment_form.save()
+            messages.success(request, 'Successfully updated the comment!')
+            return redirect(reverse('post_detail', args=[slug]))
     else:
-        commentForm = None
-
-    return post_detail(request, slug, commentForm=commentForm)
+        comment_form = CommentForm(instance=comment)
+        request.method = "GET"
+        return post_detail(request, slug, comment_form=comment_form)
 
 @login_required
-def delete_comment(request, slug, commentId):
+def delete_comment(request, slug, comment_id):
     """
     A view to delete comments by admin
     """
@@ -72,7 +67,7 @@ def delete_comment(request, slug, commentId):
         return redirect(
             reverse('blog'))
 
-    comment = get_object_or_404(Comment, pk=commentId)
+    comment = get_object_or_404(Comment, pk=comment_id)
     comment.delete()
     messages.success(request, 'The comment was removed!')
     
@@ -80,7 +75,7 @@ def delete_comment(request, slug, commentId):
 
 
 @login_required
-def editPost(request, slug):
+def edit_post(request, slug):
     """
     A view for admin to edit blog posts
 
@@ -92,9 +87,9 @@ def editPost(request, slug):
 
     post = get_object_or_404(Post, slug=slug)
     if request.method == 'POST':
-        postForm = PostForm(request.POST, request.FILES, instance=post)
-        if postForm.is_valid():
-            postForm.save()
+        post_form = PostForm(request.POST, request.FILES, instance=post)
+        if post_form.is_valid():
+            post_form.save()
             messages.success(request, 'Successfully updated the post!')
             return redirect('blog')
         else:
@@ -102,13 +97,13 @@ def editPost(request, slug):
                 Please ensure the form is valid.')
 
     else:
-        postForm = PostForm(instance=post)
+        post_form = PostForm(instance=post)
         messages.info(
             request, f'You are currently in editing mode: {post.slug}')
 
     template = 'blog/edit_post.html'
     context = {
-        'postForm': postForm,
+        'post_form': post_form,
         'post': post,
     }
 
@@ -116,7 +111,7 @@ def editPost(request, slug):
 
 
 @login_required
-def deletePost(request, slug):
+def delete_post(request, slug):
     """
     A view to delete posts
     """
@@ -132,7 +127,7 @@ def deletePost(request, slug):
 
 
 @login_required
-def addPost(request, ):
+def add_post(request, ):
 
     """
     A view to add blog post &
