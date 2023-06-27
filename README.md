@@ -68,6 +68,7 @@
          that I can make amendments if needed
       * As admin I can manage the business social media 
          profiles so that i can advertise my business.
+      * As admin I can create, edit and delete comments.
 
 * ### As a site user
       * As a site user I can easily register an  account
@@ -101,21 +102,23 @@
          so that I can take advantage of special savings on products.
       * As a site user I can view my order summary 
          so that I can verify it before confirming
-      * As a site user I can easily select the quantity of a product so that I can ensure I select the right quantity.
+      * As a site user I can easily select the quantity of a product 
+      so that I can ensure I select the right quantity.
       * As a site user I can checkout securely so 
          that I can I maintain the level of trust on the site
       * As a site user I can view blog posts
          so that I can select which posts to view.
       * As a site user I can view all posts so that I can 
          decide what I may be interested in reading.
-      * As a site user I can comment to the blog posts so
-          that I can express my opinion to the post.
+      * As a site user I can create, read , update or  
+         delete comments on a blog post.
       * As a site user I can use the contact form
           so that I can contact the site owners.
       * As a site user/shopper I can contact the business 
          through their social media profiles.
       * As a site user I can sign up to newsletter 
-         so that I can keep updated on the latest news
+         so that I can keep updated on the latest news.
+      
 
 
 * ### Database
@@ -140,7 +143,6 @@
   ![](static/images/Blog.png)
   ![](static/images/contactus_copy.png)
   
- 
   </details>
 
 
@@ -149,7 +151,8 @@
 * ### E-commerce type
 
       EbinNaturals is an e-commerce B2C online retail store that sells directly to customers. 
-      The functionality on this site for a customer is the ability to make purchases swiflty and efficiently. 
+      The functionality on this site for a customer is the ability to make purchases 
+      swiflty and efficiently. 
       For the owners, the goal is to archieve CRUD products and other functionalities.
 
 
@@ -231,10 +234,11 @@
    ![checkout bottom](static/images/checkout_bottom.png)
 
 
-
 <!-- * ### Checkout success -->
+      After completing an order, users receive an 
+      order confirmation with their details including order number.
 
-      After completing an order, users receive an order confirmation with their details including order number.
+   ![checkout success](static/images/checkout_success.png)
 
 * ### Register/Sign up
       On the right side of the home page, for the first time user
@@ -252,9 +256,6 @@
 
 * ### Logout
       Users are able to protect their account by logging out of the site.
-
-
-* ### Order confirmation email
 
 
 * ### Footer
@@ -431,6 +432,8 @@ They have to put their name, email, the topic and the overall message before sen
 | Blog | Selecting blog |  directs user to blog page |  Pass |
 | Blog detail | Selecting Blog detail |  directs user to blog detail |  Pass |
 | Leave a Comment when signed in | Submitting comment|  successfully submit and display comment |  Pass |
+| Edit a Comment when signed in | Editing comment|  successfully submit and edit comment |  Pass |
+| Delete a Comment when signed in | Deleting comment|  successfully deleted comment |  Pass |
 | Add blog | Adding a new blog | successfully add new blog to blog page  |  Pass |
 | As Admin edit blog | editing blog|  successfully edited the blog |  Pass |
 | As Admin Delete Comment | Deleting comment|  successfully remove comment |  Pass |
@@ -447,6 +450,8 @@ They have to put their name, email, the topic and the overall message before sen
 | Login | Login to an account | login-in as a new user form works |  Pass |
 | Login as admin| Login to as admin gives access to blog/product management | login-in as a new user form works |  Pass |
 | Logout | message shown | Logging out message shown |  Pass |
+| Newsletter | Subscribe to newsletter|  successfully showed subscribed|  Pass |
+
 
 ## User story testing
 ### Admin
@@ -456,10 +461,10 @@ They have to put their name, email, the topic and the overall message before sen
 * As a admin I can manage products so that I can add ,
     update or delete products when necessary
    > Admin can add, delete and update products on the site
-* As a admin I can view created orders so that I can full fill the orders or amend if needed
+* As a admin I can view created orders so that I can full fill the orders or amend if needed.
    > Admin can view orders in admin panel
 * As a Admin I can delete any of comments so that
-    I can remove them if I nolonger feel they are still necessary or needed
+    I can remove them if I nolonger feel they are still necessary or needed.
    > Only admin can delete comments 
 * As a Admin I can view messages sent via contact form so that I can act upon them
    > Admin can view send messages in the admin panel
@@ -491,25 +496,31 @@ I want to purchase to a basket so that I can decide whether to purchase or not
    > User can view bag contents by clicking the bag itself
 * As a site user I can update my bag by adding more or remove products 
    so that I can decide on the number of products I intend to buy
-   > User can update the bag to a quantity they want or remove everything entirely
-* As a site user I can view my order summary so that I can verify it before confirming
+   > User can update the bag to a quantity they want or remove everything entirely.
+* As a site user I can view my order summary so that I can verify it before confirming.
    > From secure checkout, users can verify their order summary before buying
-* As a site user I can checkout securely so that I can I maintain the level of trust on the site
+* As a site user I can checkout securely so that I can I 
+   maintain the level of trust on the site.
    > I made sure users have secure checkout when completeing a purchase
-* As a site user I can view paginated posts so that I can select which posts to view
-   > Blog posts are paginated, clear and easy to see so to select which to view
-* As a site user I can view all posts so that I can decide what I may be interested in reading
+* As a site user I can view  posts so that I can select which posts to view.
+   > Blog posts are clear and easy to see so to select which to view
+* As a site user I can view all posts so that I can decide what
+ I may be interested in reading.
    > Users can easily choose which one to read
-* As a site user I can comment to the blog posts so that I can express my opinion to the post
-   > I made the site such that signed in user can comment on blog posts
-* As a site user I can use the contact form so that I can contact the site owners
-  > By using the contact form, user can send messages to the site owners
-* As a site user I can sign up to newsletter so that I can keep updated on the latest news
-  > By going to sign up newsletter on the footer, users can easily sign up to receive latest news.
+* As a site user I can create,edit,update or delete comment to the
+   blog posts so that I can express my opinion to the post.
+   > I made the site such that signed in user can create,edit,update 
+      or delete comment on blog posts.
+* As a site user I can use the contact form so that I can contact the site owners.
+  > By using the contact form, user can send messages to the site owners.
+* As a site user I can sign up to newsletter so that I can keep updated on the latest news.
+  > By going to sign up newsletter on the footer, 
+   users can easily sign up to receive latest news.
 
 ## Functionality testing
 
-Throughout developing this site, I have been using Chrome, and chrome dev tools to help with debugging issues. Testing responsiveness was done using chrome emulated devices.
+Throughout developing this site, I have been using Chrome, and chrome dev tools to help with debugging issues. 
+Testing responsiveness was done using chrome emulated devices.
 
 ## Compatibility testing
 
@@ -544,7 +555,7 @@ Mobile
   </details> 
 
 ### Python
-[ CI Python linter ](https://pep8ci.herokuapp.com/) was used to test python code
+[ Flake8 was used to test python code.
 
 ## Bugs
 
@@ -562,7 +573,7 @@ Mobile
 ### Bug 2
 
 2. 
-While trying to copy recursively some templates I realized the command wasn't working,
+   While trying to copy recursively some templates I realized the command wasn't working,
    tutor support guided me in fixing it by giving me the right command.
 
 ![](static/images/Productdetail_bug.png)
@@ -570,18 +581,13 @@ While trying to copy recursively some templates I realized the command wasn't wo
  
 ### Bug 3
 
-I had problem disabling collect_static 
-![](static/images/bug4.jpg)
+  3. While I was in the process of connecting django to S3 bucket I encountered 
+  the issue of heroku configset:DISABLE_COLLECTSTATIC which prevented a successful deployment from django. 
+  After several attempts I manually created a static file in the root directory, I manually uploaded in the S3 website.
 
 ### Bug 4
-
-Double orders in admin panel
-
-![](static/images/double_order.jpg)
-
-Solution: In checkout views.py in the checkout function, 2 following lines of code fixed it
-
-![](static/images/solution.jpg)
+   4. I had this error "TypeError: __init__() got an unexpected keyword argument 'providing_args'" while trying to migrate the allauth app.
+      I uninstalled django and reinstalled it, thereafter running python3 manage.py migrate which worked successfu
 
 
 
@@ -627,7 +633,7 @@ I then went to create a database to connect to the new created app.
 
 * import dj_database_url in settings and update your database
 
-* migrate your database
+* Migrate your database
 
 * create a new superuser for your database and at this point your database is exposed do not commit it to github
 
@@ -665,14 +671,16 @@ I then went to create a database to connect to the new created app.
 
 ## Credits
 
+* Homepage banner image by Silvia from pixabay
+
 * Images are from [Pixabay](https://pixabay.com/) , [Pexels](https://www.pexels.com/)
 
-* Code Institute Botique Ado walk through
+* Code Institute Botique Ado walkthrough and fourth project NaijaNetherlands
 
-* I went through other student's project to get ideas and check theor readme but the one I used the most was from 
-Pauline Rugwevera project and MikeR94 Readme.
+* I went through other student's project to get ideas pn their projects and check their readme but the one I used the most was from 
+   Pauline Rugwevera project and MikeR94 Readme.
 
-* Hello django code institute
+* Hello django code institute.
 
 * [Stack overflow](https://stackoverflow.com/) for debugging issues.
 
@@ -681,7 +689,7 @@ Pauline Rugwevera project and MikeR94 Readme.
 
 #### Blog content
 
-* [Blog link]()
+* [Blog link](https://www.kitchen-concoctions.com/2012/05/avocado-banana-hair-mask/)
 
 ### Acknowledgement and support
 
@@ -689,35 +697,3 @@ Pauline Rugwevera project and MikeR94 Readme.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
-
-#Bugs
-1. I had this error "TypeError: __init__() got an unexpected keyword argument 'providing_args'" while trying to migrate the allauth app.
-I uninstalled django and reinstalled it, thereafter running python3 manage.py migrate which worked successfully.
-
-
-Tutor support guided me in finding the django-allauth directory.
-3.While I was in the process of connecting django to S3 bucket I encountered the issue of heroku configset:DISABLE_COLLECTSTATIC which prevented a successful deployment from django. After several attempts I manually created a static file in the root directory and I manually uploaded in the S3 website.
-
-Images
-Homepage banner image by Silvia from pixabay
-Image by Freepik
-
-blog
-https://www.kitchen-concoctions.com/2012/05/avocado-banana-hair-mask/
-https://coolors.co/51f05f-171616-f9f9f9/color palette
-https://github.com/MikeR94/CI-Project-Portfolio-1/blob/main/README.md
