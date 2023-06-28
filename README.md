@@ -29,8 +29,6 @@
          * [Footer](<#footer>)
     * [**Future Features**](<#future-features>)
          * [Testimonials](<#testimonials>)
-         * [Latest News](<#latest-news>)
-         * [Newsletter](<#latest-news>)
 * [**Technologies Used**](<#technologies-used>)
 * [**Manual and Automated Testing**](<#manaual and automated testing>)
 * [**Deployment**](<#deployment>)
@@ -234,7 +232,7 @@
    ![checkout bottom](static/images/checkout_bottom.png)
 
 
-<!-- * ### Checkout success -->
+* ### Checkout success
       After completing an order, users receive an 
       order confirmation with their details including order number.
 
@@ -244,26 +242,86 @@
       On the right side of the home page, for the first time user
        they will need to register their account to enjoy most of the site
         benefits such as saving their orders, commenting on blogs. 
-        When registering users are asked their username, email and password
-
+        When registering users are asked their username, email and password.
+   ![signup-form](static/images/signup-form.png)
 * ### Sign in
 
       Registered users would need to sign in when they visit the site again. 
       They will be asked to enter their username and password. 
       The Remember me option is also available making life easier for returning users. 
       It's users need to reset their password, a forgot password is also available.
+      After sign-in, a pop-up confirmation message will show.
+   ![signin-form](static/images/sign_in_form.png)
+
+* ### Account dropdown
+      This displays the links to product and blog management, my profile and logout.
+   ![account-dropdown](static/images/account_dropdown.png)
 
 
 * ### Logout
       Users are able to protect their account by logging out of the site.
 
+## My Profile  
+
+      The profile page displays a user's saved 
+      contact infomation and their order history.
+      Here they can update their personal information.
+   ![profile-page](static/images/profile_page.png)
+
+
+* ### Blog
+
+      Users can view all the blog articles and select 
+      which one to read by clicking the image
+    ![blog](static/images/blogpost.png)
+
+* ### Blog detail
+
+      This shows the post details of the blog.
+### Blog management
+
+* ### Add blog
+
+         Super users are the creators of the blog articles.
+       Here a new blogpost can be created without logging through django admin page.
+    ![blog](static/images/blog-manage.png)
+
+* ### Edit/Delete blogpost.
+
+      Super users can also edit/delete the blog and update the changes.
+![Edit/delet_post](static/images/edit_post.png)
+
+* ### Add comment
+     Only  logged-in Users/Superusers have the ability to add comments. If not you will be required to login to leave a comment.
+![login-comment](static/images/login_for_comment.png)
+
+
+* ### Edit/Delete comment
+      Superusers/Logged-in Users have the ability to edit or delete comments.
+![edit_comment](static/images/comment_edit.png)
+
+
+# 404 page
+
+ A 404 page is also available to handle navigation errors with a
+ home link button to take them back to the home page.
+![error handling](static/images/404.png)
+
+
+* ### Contact us
+
+      A contact us page is available for users who need to get in touch with the store owners. 
+      They have to put their name, email, the topic and the overall message before sending.
+![contact](static/images/contact_form.png)
+
 
 * ### Footer
 
       The footer appears on all pages of the site, 
-      it contains the newsletter sign up, about us, privacy policy and social media links.
+      it contains the newsletter sign up, privacy policy and social media links.
 
-![footer](static/images/footer.jpg)
+![footer](static/images/footer.png)
+
 
 * ### Newsletter
 
@@ -277,85 +335,25 @@ offers and deals straight into their inbox.
 ![privacy policy](static/images/privacy_policy.png)
 
 
-* ### Blog
-
-      Users can view all the blog articles and select 
-      which one to read by clicking the image
-    ![blog](static/images/blogpost.png)
-
-* ### Blog detail
-
-   Only logged in users are permitted to comment on
-    articles in as much as they can read other comments written by other users
-
-   After logging in they can leave a comment on any blog article
-
-### Blog management
-
-* ### Add blog
-
-      Super users are the creators of the blog articles.
-       To add a new blog they have to put title, slug, body and image and then save.
-
-![add blog](static/images/add_blog.png)
-
-* ### Edit blog
-
-      Super users can also edit the blog and update the changes
-![edit blog](static/images/edit_blog.png)
-
-* ### Delete post
-
-      If the post is no longer serving its purposes, super users can also delete it
-![delete blog](static/images/deletepost.jpg)
-
-## Add comment
-
-Logged-in Users/Superusers have the ability to add comments.
-
-## Edit comment
-
-Superusers/Logged-in Users/ have the ability to edit comments.
-
-## Delete comment
-Superusers/Logged-in Users have the ability to delete comments.
-
-
-# Contact us
-
-A contact us page is available for users who need to get in touch with the store owners. 
-They have to put their name, email, the topic and the overall message before sending.
-![contact](static/images/contact_form.png)
-
-## My Profile
-
-  The my profile page displays a user's saved 
-   contact infomation and their order history.
-
-
-# 404 page
-
- A 404 page is also available to handle navigation errors with a
- home link button to take them back to the home page.
-![error handling](static/images/404.png)
-
 ### Future features
 
 * Users replying to other blog comments.
 * Blog likes.
 * Additional blog posts.
+* Testimonials
+* 
 
 # Web marketing
 
 * ### Email marketing
 
-      The free version of mailchimp was chosen with the current status of the business.
+    The free version of mailchimp was chosen with the current status of the business.
     Each user that signs up is added to the weekly newsletter and they might 
-    turn out to be future customers henceforth low cost to drive sales.
-
+    turn out to be future customers.
 * ### Search engine optimization
 
       SEO keywords
+![meta tags](static/images/meta_tags.png)
 
 * ### Social media marketing
 
@@ -404,7 +402,7 @@ They have to put their name, email, the topic and the overall message before sen
 
 * [Pexels](https://www.pexels.com/) - images used for the project
 
-* 
+* [Pixabay]
 
 
 # Testing
@@ -458,16 +456,16 @@ They have to put their name, email, the topic and the overall message before sen
 * As a admin I can manage users' accounts so that
     I can make any required changes to them if needed
    > Admin can manage user accounts from admin panels
-* As a admin I can manage products so that I can add ,
+* As an admin I can manage products so that I can add ,
     update or delete products when necessary
    > Admin can add, delete and update products on the site
-* As a admin I can view created orders so that I can full fill the orders or amend if needed.
+* As an admin I can view created orders so that I can full fill the orders or amend if needed.
    > Admin can view orders in admin panel
-* As a Admin I can delete any of comments so that
+* As an Admin I can delete any of comments so that
     I can remove them if I nolonger feel they are still necessary or needed.
-   > Only admin can delete comments 
-* As a Admin I can view messages sent via contact form so that I can act upon them
-   > Admin can view send messages in the admin panel
+   >Admin can delete comments if they feel it's neceesary.
+* As an Admin I can view messages sent via contact form so that I can act upon them.
+   > Admin can view messages in the admin panel
 * As an admin I can manage the blog content so that I can make amendments if needed
    > Admin can add, edit or delete blogs via blog management. only accessible to admin
 
@@ -555,14 +553,14 @@ Mobile
   </details> 
 
 ### Python
-[ Flake8 was used to test python code.
+Flake8 was used to test python code.
 
 ## Bugs
 
-   For this project there were so many major bugs I encountered during the project development. 
+   For this project there were so many major bugs I encountered during the project development. The list below is inexhaustive of all the issues encountered.
    Some of them I ended up taking them to tutor support whom have been very helpful. 
-   Also, my dear husband who is also a developer who helped me to resolve issues 
-   that tutor support couldn't help with.
+   Also, my dear husband who is also a developer who helped me to resolve issues that tutor support couldn't help with especially the
+   AWS.
 
 ### Bug 1
    1.During development, product detail wasn't displaying beacause of erroneous template.
@@ -573,12 +571,9 @@ Mobile
 ### Bug 2
 
 2. 
-   While trying to copy recursively some templates I realized the command wasn't working,
-   tutor support guided me in fixing it by giving me the right command.
+   While trying to copy recursively some templates I realized the command wasn't working,tutor support guided me in fixing it by giving me the right command.
+ 
 
-![](static/images/Productdetail_bug.png)
- 
- 
 ### Bug 3
 
   3. While I was in the process of connecting django to S3 bucket I encountered 
@@ -587,7 +582,7 @@ Mobile
 
 ### Bug 4
    4. I had this error "TypeError: __init__() got an unexpected keyword argument 'providing_args'" while trying to migrate the allauth app.
-      I uninstalled django and reinstalled it, thereafter running python3 manage.py migrate which worked successfu
+      I uninstalled django and reinstalled it, thereafter running python3 manage.py migrate which worked successfully.
 
 
 
@@ -677,17 +672,13 @@ I then went to create a database to connect to the new created app.
 
 * Code Institute Botique Ado walkthrough and fourth project NaijaNetherlands
 
-* I went through other student's project to get ideas pn their projects and check their readme but the one I used the most was from 
-   Pauline Rugwevera project and MikeR94 Readme.
+* I went through other student's project to get ideas on their projects and checked their readme but the one I used the most was from Pauline Rugwevera project and MikeR94's Readme examples.
 
 * Hello django code institute.
 
 * [Stack overflow](https://stackoverflow.com/) for debugging issues.
 
 * [Coolors](https://coolors.com) for generating color palette.
-
-
-#### Blog content
 
 * [Blog link](https://www.kitchen-concoctions.com/2012/05/avocado-banana-hair-mask/)
 
